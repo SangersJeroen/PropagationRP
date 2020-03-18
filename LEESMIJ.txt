@@ -1,0 +1,7 @@
+Gelieve de bestanden:
+	-main.aux
+	-main.fdb_latexmk
+	-main.fls
+	-moin.log
+	-main.synctex.gz
+te verwijderen voordat de veranderingen gepusht worden

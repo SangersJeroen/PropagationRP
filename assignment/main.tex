@@ -24,8 +24,135 @@
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 %Als we extra packages willen laden kan dat het best in structure.tex
 
+% Define matices for pretty functions
+\def\r{
+	\begin{pmatrix}
+		x \\
+		y \\
+		z 
+	\end{pmatrix}}
+	
+\def\dr{
+	\begin{pmatrix}
+		\dot{x} \\
+		\dot{y} \\
+		\dot{z} 
+	\end{pmatrix}}
+	
+\def\Nabla{
+	\begin{pmatrix}
+		\frac{\partial}{\partial {x}} \\
+		\frac{\partial}{\partial {y}} \\
+		\frac{\partial}{\partial {z}} 
+	\end{pmatrix}}
+	
+\def\dNabla{
+	\begin{pmatrix}
+		\frac{\partial}{\partial \dot{x}} \\
+		\frac{\partial}{\partial \dot{y}} \\
+		\frac{\partial}{\partial \dot{z}} 
+	\end{pmatrix}}
+	
+	
 \begin{document}
 
-Lorem ipsum
+\section{Principle of Fermat}
+
+\textit{\underline{Question:} Proof that \ref{eq_1.3} and \ref{eq_1.4} can be reduced to equation \ref{eq_1.6}.} \\
+
+\begin{equation}
+	\label{eq_1.3}
+	L[x,y,z,\dot{X},\dot{y},\dot{z}] = n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
+\end{equation}
+
+\begin{equation}
+	\label{eq_1.4}
+	\frac{d}{dt} \frac{\partial L}{\partial \dot{x}} - \frac{\partial L}{\partial x} = 0, \frac{d}{dt} \frac{\partial L}{\partial \dot{y}} - \frac{\partial L}{\partial y} = 0, \frac{d}{dt} \frac{\partial L}{\partial \dot{z}} - \frac{\partial L}{\partial z} = 0
+\end{equation}
+
+\begin{equation}
+	\label{eq_1.6}
+	\frac{d}{ds} \left[ n \frac{d \vec{r}}{ds} \right] = \vec{\nabla} n
+\end{equation}
+
+\textit{\underline{Answer:}}\\
+\\
+First noting that $ds$ is a small element of distance travelled. Therefore taking into account the $x$, $y$ and $z$ direction, $ds$ is given by: \\
+
+\begin{equation}
+	ds = \sqrt{{dx}^2+{dy}^2+{dz}^2}
+\end{equation}
+
+A small distance travelled in a trivial direction, lets say $dx$, can be approximated by as $dx = dt \cdot \dot{x}$. Therefore $ds$ can be rewritten as: \\
+
+\begin{equation}
+	ds = dt \sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
+\end{equation}
+
+Rewriting gives:
+
+\begin{equation}
+	\label{eq_dsdt}
+	\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2} = \frac{ds}{dt}
+\end{equation}
+
+If we combine the equations in equation \ref{eq_1.4} in vector notation we get: \\
+
+\begin{equation}
+	\frac{d}{dt} \dNabla L - \nabla L = 0
+\end{equation}
+
+Rewriting and filling in equation \ref{eq_1.3} gives:
+
+\begin{equation}
+	\frac{d}{dt} \left[ \dNabla n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2} \right] = \Nabla \left[ n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2} \right]
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dt}  \frac{n \cdot \dot{\vec{r}} }{\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}}   = \vec{\nabla} n \; \sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
+\end{equation}
+
+Using equation \ref{eq_dsdt} to to replace the $\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}$ and rewriting the $\dot{\vec{r}}$ vector gives the following: \\
+
+\begin{equation}
+	\frac{d}{dt} \frac{n \cdot \dot{\vec{r}}}{\frac{ds}{dt}}  = \vec{\nabla} n \: \frac{ds}{dt}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dt}  \frac{n \cdot \frac{d}{dt} \vec{r}}{\frac{ds}{dt}}   =  \vec{\nabla} n \: \frac{ds}{dt}
+\end{equation}
+
+Rewriting yields the equation that was to be proved: \\
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d \vec{r}}{ds} \right] = \vec{\nabla} n
+\end{equation}
+
+\section{Application}
+\subsection{Homogeneous medium}
+
+\textit{\underline{Question:} Using equation \ref{eq_1.6}, show how light is travelling in a homogeneous medium.}\\
+\\
+\textit{\underline{Answer:}} \\
+\\
+Equation \ref{eq_1.6} can be rewritten using the chain rule: \\
+
+\begin{equation}
+	\frac{d \vec{r}}{ds} \frac{d}{ds} n + n \frac{d^2 \vec{r}}{ds^2} = \Nabla n
+\end{equation}
+
+Note that for a homogeneous medium, the index of refraction, $n$, is constant. Therefore $\frac{dn}{ds} = 0$, $\frac{\partial n}{\partial x} = 0$, $\frac{\partial n}{\partial y} = 0$ and $\frac{\partial n}{\partial z} = 0$. Using this in the previous equation yields: \\
+
+\begin{equation}
+	 n \frac{d^2 \vec{r}}{ds^2} = \vec{0}
+\end{equation}
+
+\begin{equation}
+	 \frac{d^2 \vec{r}}{ds^2} = \vec{0}
+\end{equation}
+
+
+This implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity of $ v = c/n $. \\
+
 
 \end{document}

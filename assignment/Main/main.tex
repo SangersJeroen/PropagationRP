@@ -24,6 +24,7 @@
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 %Als we extra packages willen laden kan dat het best in structure.tex
 
+
 % Define matices for pretty functions
 \def\r{
 	\begin{pmatrix}
@@ -213,6 +214,51 @@ If we rewrite this and use the fact that the speed of light in a medium is given
 This equation basically tells us, that for a interface to a higher refractive index, so where the light slows down, the light bends to the normal. 
 
 \subsubsection{Analytical}
+
+For the analytical derivation of Snell-Descartes law we will use a similar diagram as in the geometrical derivation with a coordinate system added as in figure \ref{fig_snell_analytical}.
+
+\begin{figure}[h!]
+\centering
+  \begin{subfigure}[b]{0.6\textwidth}
+    \includegraphics[width=\textwidth]{afbeeldingen/snell_analytical.jpg}
+	\caption{Diagram of the path of light at the interface of two media with different refractive indices $n_1$ and $n_2$. $\theta _1$ and $\theta _2$ correspond to the angle with the normal.}
+	\label{fig_snell_analytical}
+  \end{subfigure}
+  %
+  \begin{subfigure}[b]{0.2\textwidth}
+    \includegraphics[width=\textwidth]{afbeeldingen/ds.jpg}
+	\caption{$ds$ in relation to $dx$ and $dy$.}
+	\label{fig_ds}
+  \end{subfigure}
+  \caption{}
+\end{figure}
+
+
+If we write equation \ref{eq_1.6} for only the x-component and use the fact that $n$ is independent of $x$ in our diagram, we get the following:
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = 0
+\end{equation}
+
+The $ds$ in the latter equation is defined as in figure \ref{fig_ds}. If we keep a fixed $ds$ for both media we obtain the following equality:
+
+\begin{equation}
+	\frac{d}{ds} \left[ n_1 \frac{d x_1}{ds} \right] = \frac{d}{ds} \left[ n_2 \frac{d x_2}{ds} \right]
+\end{equation}
+
+Rewriting and using the trigonometric identity, $sin(\theta)= dx/ds$, yields the Snell-Descartes law:
+
+\begin{equation}
+	n_1 \frac{d x_1}{ds}]=n_2 \frac{d x_2}{ds}
+\end{equation}
+
+\begin{equation}
+	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
+\end{equation}
 
 
 

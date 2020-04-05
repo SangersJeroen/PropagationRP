@@ -30,31 +30,31 @@
 	\begin{pmatrix}
 		x \\
 		y \\
-		z 
+		z
 	\end{pmatrix}}
-	
+
 \def\dr{
 	\begin{pmatrix}
 		\dot{x} \\
 		\dot{y} \\
-		\dot{z} 
+		\dot{z}
 	\end{pmatrix}}
-	
+
 \def\Nabla{
 	\begin{pmatrix}
 		\frac{\partial}{\partial {x}} \\
 		\frac{\partial}{\partial {y}} \\
-		\frac{\partial}{\partial {z}} 
+		\frac{\partial}{\partial {z}}
 	\end{pmatrix}}
-	
+
 \def\dNabla{
 	\begin{pmatrix}
 		\frac{\partial}{\partial \dot{x}} \\
 		\frac{\partial}{\partial \dot{y}} \\
-		\frac{\partial}{\partial \dot{z}} 
+		\frac{\partial}{\partial \dot{z}}
 	\end{pmatrix}}
-	
-	
+
+
 \begin{document}
 
 \section{Principle of Fermat}
@@ -162,7 +162,7 @@ This implies that the direction and velocity of the light is not changed as the 
 \\
 
 \subsubsection{Geometrical}
-The speed of light in a medium is inversely proportional to the refractive index. Therefore, the shortest path (in distance) between two points in materials with different refractive indices is not always the fastest (in time). This phenomenon is nicely described by a 2-dimensional analogy of a beach (see figure \ref{fig_snell_empty}). The maximum speed on foot on beach is significantly higher than the maximum swimming speed in the water. So if somebody would need to get from a point A on the beach to a point B in the water, the direct route from A to B (dashed line in figure \ref{fig_snell_empty}) would intuitively be slower than the path with a shorter swimming distance (solid line in figure \ref{fig_snell_empty}). 
+The speed of light in a medium is inversely proportional to the refractive index. Therefore, the shortest path (in distance) between two points in materials with different refractive indices is not always the fastest (in time). This phenomenon is nicely described by a 2-dimensional analogy of a beach (see figure \ref{fig_snell_empty}). The maximum speed on foot on beach is significantly higher than the maximum swimming speed in the water. So if somebody would need to get from a point A on the beach to a point B in the water, the direct route from A to B (dashed line in figure \ref{fig_snell_empty}) would intuitively be slower than the path with a shorter swimming distance (solid line in figure \ref{fig_snell_empty}).
 
 \begin{figure}[h!]
 	\centering
@@ -171,47 +171,47 @@ The speed of light in a medium is inversely proportional to the refractive index
 	\label{fig_snell_empty}
 \end{figure}
 
-It is possible to calculate the fastest route between point A and B If we add the parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$ which corresponds respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in figure \ref{fig_snell_full}. 
+It is possible to calculate the fastest route between point A and B If we add the parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$ which corresponds respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in figure \ref{fig_snell_full}.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=8cm]{afbeeldingen/snell_diagram_vol.jpg}
 	\caption{Diagram of beach analogy parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$. These correspond respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in the diagram.}
 	\label{fig_snell_full}
-\end{figure} 
+\end{figure}
 
-The time it takes to travel from point A to B, $t$, can easily be found dividing the path on the beach and the water, respectively $l_{beach}$ and $l_{water}$ by the corresponding speed: 
+The time it takes to travel from point A to B, $t$, can easily be found dividing the path on the beach and the water, respectively $l_{beach}$ and $l_{water}$ by the corresponding speed:
 
 \begin{equation}
 	t = l_{beach}/v_1 + l_{water}/v_2
-\end{equation} 
+\end{equation}
 
-Using the pythagoras theorem we find: 
+Using the pythagoras theorem we find:
 
 \begin{equation}
 	t = \sqrt{a^2 + c^2}/v_1 + \sqrt{b^2 + (d-c)^2}/v_2
 	\label{eq_t}
-\end{equation} 
+\end{equation}
 
-If there is a fastest path, there should be an optimum value for $c$ for which $dt/dc = 0$. Therefore, applying the principle of Fermat to equation \ref{eq_t} leads to the following: 
+If there is a fastest path, there should be an optimum value for $c$ for which $dt/dc = 0$. Therefore, applying the principle of Fermat to equation \ref{eq_t} leads to the following:
 
 \begin{equation}
 	0 = \frac{c}{v_1 \sqrt{a^2 + c^2}} + \frac{c-d}{v_2 \sqrt{b^2 + (d-c)^2}}
 \end{equation}
 
-Using the trigonometric identity $sin(\theta) = (adjacent side)/(diagonal side)$ for right-angled triangle we obtain: 
+Using the trigonometric identity $sin(\theta) = (adjacent side)/(diagonal side)$ for right-angled triangle we obtain:
 
 \begin{equation}
 	0 =  sin(\theta _1)/v_1 - sin(\theta _2)/v_2
 \end{equation}
 
-If we rewrite this and use the fact that the speed of light in a medium is given by $v = c/n$ we obtain Snell-Descartes law: 
+If we rewrite this and use the fact that the speed of light in a medium is given by $v = c/n$ we obtain Snell-Descartes law:
 
 \begin{equation}
-	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2) 
+	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
 \end{equation}
 
-This equation basically tells us, that for a interface to a higher refractive index, so where the light slows down, the light bends to the normal. 
+This equation basically tells us, that for a interface to a higher refractive index, so where the light slows down, the light bends to the normal.
 
 \subsubsection{Analytical}
 
@@ -260,8 +260,106 @@ Rewriting and using the trigonometric identity, $sin(\theta)= dx/ds$, yields the
 	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
 \end{equation}
 
+\subsection{Mirage}
+The mirage is a common phenomenon when the ground is very warm and the temperature of the air decreases with altitude; in this case the density then increases as well as its index of refraction.\\
+\vspace{3mm}
+\textit{\underline{Sketch} what is happening.}\\
+In figure \ref{fig:mirage} a situation in which a mirage occurs has been sketched. In this figure a few parameters were introduced, an $x$- and $z$-distance respectivly denoting the horizontal and vertical distance from the feet of the observer and an angle $\Theta$ which is the angle between the horizontal and the unbent light path from the observer. A gradient effect is also applied to the image, where the colour is darker the index of refraction is higher.\\
+Since the index of refraction of the air varies with the temperature and the temperature increases as the $z$-coordinate increases, the path of light rays will be bent. Thus there will be a light ray coming from the sky bending in such a way that it lands in the eye of an observer. This is the mirage effect where light follows a different path than one might expect.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth,keepaspectratio]{afbeeldingen/miraaj.png}
+	\caption{A sketch of situation where a mirage effect occurs.}
+	\label{fig:mirage}
+\end{figure}
 
 
+\textit{\underline{Find} the relation between the index of refraction with the altitude if we assume that the gradient of the temperature changes linearily with the altituder.}\\
+In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$, the Gladstone-Dale relation is used. In equation \ref{eq:glad-dale} this relation is shown with a proportionality constant $K_{air}$. Finally using the equation of state \ref{eq:thermo_formula} it is possible to relate the index of refraction $n$ to height $z$. Finding the relation for the pressure at height $P(z)$ is show below in the derivation and the result is displayed in equation \ref{eq:pressure}.\\
+\begin{equation}
+	T(z) = T_0 - c \cdot z
+	\label{eq:temp}
+\end{equation}
+\begin{equation}
+	n-1 \propto K_{air} \rho
+	\label{eq:glad-dale}
+\end{equation}
+\begin{equation}
+	\rho = \frac{1}{R_{sp,air}} \frac{P(z)}{T(z)}
+	\label{eq:thermo_formula}
+\end{equation}
+\begin{equation*}
+	dT/dz \equiv -c
+\end{equation*}
+\begin{equation*}
+	dP = -g_0 \rho dz
+\end{equation*}
+\begin{align*}
+	dP &= g_0 \frac{\rho}{c} dT\\
+	\frac{dP}{P} &= \frac{g_0}{c\cdot R_{sp,air}}\frac{dT}{T}\\
+	\int_{P0}^P dP &= \int_{T_0}^T \frac{g_0}{c\cdot R_{sp,air}}\frac{dT}{T}\\
+	\ln{P}-\ln{P_0} &= \big[\ln{T} - \ln{T_0}\big] \cdot \frac{g_0}{c\cdot R_{sp,air}}\\
+	\frac{P}{P_0} &= (\frac{T}{T_0})^{\frac{g_0}{c\cdot R_{sp,air}}}
+\end{align*}
+\begin{equation}
+	P = P_0 \cdot (\frac{T}{T_0})^{\frac{g_0}{c\cdot R_{sp,air}}}
+	\label{eq:pressure}
+\end{equation}
+After deriving equation \ref{eq:pressure} it is know possible to use both equation \ref{eq:temp} and equation \ref{eq:pressure} to derive the air density $\rho$ with equation \ref{eq:thermo_formula}. The result is show in equation \ref{eq:rho_for_z}, which will be combined with the Gladstone-Dale relation for a equation that equates the index of refraction $n$ with the height $z$. Shown in equation \ref{eq:n_for_z}.\\
+\begin{equation*}
+	\rho = \frac{P_0}{R_{sp,air}\cdot T(z)} \cdot(\frac{T(z)}{T_0})^{\frac{g_0}{c\cdot R_{sp,air}}}
+\end{equation*}
+\begin{align*}
+	\rho &= \frac{P_0}{R_{sp,air}} \cdot \frac{T(z)^{\frac{g_0}{c R_{sp,air}}}}{T(z)} \cdot (T_0)^{-\frac{g_0}{c R_{sp,air}}}\\
+	\rho &= \Bigl[T(z) \Bigr]^{\frac{g_0}{c R_{sp,air}} -1} \frac{P_0}{R_{sp,air}} \cdot T_0^{-\frac{g_0}{c R_{sp,air}}}\\
+	\rho &= \Bigl[T_0 -c\cdot z \Bigr]^{\frac{g_0}{c R_{sp,air}} -1} \frac{P_0}{R_{sp,air}} \cdot T_0^{-\frac{g_0}{c R_{sp,air}}}\\
+	\rho &= \frac{P_0}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
+\end{align*}
+\begin{equation}
+	\rho = \frac{P_0}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
+	\label{eq:rho_for_z}
+\end{equation}
+\begin{equation}
+	n(z) = K_{air}\rho + 1 = 1 + \frac{P_0 K_{air}}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
+	\label{eq:n_for_z}
+\end{equation}
+\textit{\underline{Express} analytically the trajectory of the light in this situation.}\\
+For an analytical solution it is easier to linearise equation \ref{eq:n_for_z}.
+\begin{align*}
+	n_l(z) &= n_0 + \alpha \cdot z\\
+	n_l(z) &= n(0) +z \cdot \frac{d}{dz}n(z)\rvert_{z=0}
+\end{align*}
+To get to an analytical solution; equation \ref{eq_1.6} needs to be solved. This is done below.
+\begin{equation*}
+	\vec{\nabla} \cdot n(z) = \frac{\partial}{\partial z}n(z)= \alpha \vec{e}_z
+\end{equation*}
+\begin{align*}
+	\frac{d}{ds} \Bigl[n(z)\frac{d\vec{r}}{ds}\Bigr] = \vec{\nabla}\cdot n(z) &= \alpha \vec{e}_z\\
+	\frac{d}{ds} \Bigl[n(z)\frac{d\vec{x}+d\vec{z}}{\sqrt{dx^2 + dz^2}}\Bigr] &= \alpha \vec{e}_z\\
+	\frac{d}{ds} \Bigl[n(z)\frac{dx}{\sqrt{dx^2 + dz^2}}\Bigr] &= 0\\
+	\frac{d}{ds} \Bigl[n(z)\frac{dz}{\sqrt{dx^2 + dz^2}}\Bigr] &= \alpha\\
+\end{align*}
+
+\begin{align*}
+	n(z)\cdot \frac{dx}{\sqrt{dx^2 + dy^2}} &= c\\
+	n(z)^2 \cdot \frac{dx^2}{dx^2 + dy^2} &= c^2\\
+	n(z)^2 \cdot dx^2 &= c^2(dx^2 + dy^2)\\
+	\frac{dz}{dx} = \frac{\sqrt{n(z)^2 -c^2}}{c} &= \frac{\sqrt{(n_0+\alpha\cdot z)^2 -c^2}}{c}
+\end{align*}
+The above first-order nonlinear ordinary differential equation has been solved using wolfram and is displayed below in \ref{eq:magic_wolfram}. In this equation $k$ is an arbritary constant and $c$ is the total path length. $\alpha$ is the defined linearisation constant.
+\begin{equation}
+	z(x)=-\frac{c^2 \exp{(\alpha x + \alpha k)/c}+\exp{-(\alpha x + \alpha k)/c}-2n_0}{2 \alpha}
+	\label{eq:magic_wolfram}
+\end{equation}
+\textit{\underline{Plot} several of these trajectories for different relevant cases.}\\
+Below in figure \ref{fig:traj} a few trajectories for different $\alpha$-values are plotted. These values range from $\alpha = 7.77 \cdot 10^{-7}$ the linearisation constant equal to $d/dz \cdot n(z)\rvert_{z=0}$ to the same constant a magnitude larger.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth,keepaspectratio]{afbeeldingen/light path.png}
+	\label{fig:traj}
+\end{figure}
 
 
 \end{document}

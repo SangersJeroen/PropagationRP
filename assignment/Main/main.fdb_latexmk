@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1586112688 "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.pdf" "main" 1586112692
+["pdflatex"] 1586120419 "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.pdf" "main" 1586120423
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc" 1566088030 3245 1a602e5c47d185e5d5f34ca2e7098e98 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -198,18 +198,19 @@
   "C:/Users/Gebruiker/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1573425771 4301476 06b9a767f45e2a399b533656fadd4a66 ""
   "C:/Users/Gebruiker/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1573425739 4750625 84bf946dcbd04cb996c58111638d9a26 ""
   "afbeeldingen/ds.jpg" 1586097967 35065 5d71718d7ebc22396a7eb7b974f55fb9 ""
+  "afbeeldingen/light path.png" 1586119702 67712 d836610ae3385c12520f5e722879f54a ""
   "afbeeldingen/miraaj.png" 1586099065 744462 0914da928b2df6d81e6b6d4c97b80541 ""
   "afbeeldingen/snell_analytical.jpg" 1586097967 123299 3dcc7a12c8b6f25a71436edf07d7fe27 ""
   "afbeeldingen/snell_diagram_leeg.jpg" 1586097967 121336 80f8e7fcae3225e875d85b53e4f07e09 ""
   "afbeeldingen/snell_diagram_vol.jpg" 1586097967 143511 380513fad70e9353924efe52af1338c3 ""
-  "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" 1586112687 15819 4ec54ff4e7b9fe366cd01ed74b65f7d7 ""
-  "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.aux" 1586112691 2646 590880da0a305c2ea72f110640a255eb ""
-  "main.aux" 1586112691 2646 590880da0a305c2ea72f110640a255eb "pdflatex"
-  "main.tex" 1586112687 15819 4ec54ff4e7b9fe366cd01ed74b65f7d7 ""
+  "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" 1586120415 17010 f91ef42f5d994d87a54aafda408134aa ""
+  "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.aux" 1586120423 2754 c6ca660fd8c51fbad18b9aad7a66aa8a ""
+  "main.aux" 1586120423 2754 c6ca660fd8c51fbad18b9aad7a66aa8a "pdflatex"
+  "main.tex" 1586120415 17010 f91ef42f5d994d87a54aafda408134aa ""
   "structure.tex" 1586097967 6822 9ed58a13f6febd60c7bb22958bc104c6 ""
   (generated)
-  "main.aux"
-  "main.pdf"
   "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.log"
-  "main.log"
   "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.pdf"
+  "main.aux"
+  "main.log"
+  "main.pdf"

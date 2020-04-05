@@ -341,6 +341,25 @@ To get to an analytical solution; equation \ref{eq_1.6} needs to be solved. This
 	\frac{d}{ds} \Bigl[n(z)\frac{dz}{\sqrt{dx^2 + dz^2}}\Bigr] &= \alpha\\
 \end{align*}
 
+\begin{align*}
+	n(z)\cdot \frac{dx}{\sqrt{dx^2 + dy^2}} &= c\\
+	n(z)^2 \cdot \frac{dx^2}{dx^2 + dy^2} &= c^2\\
+	n(z)^2 \cdot dx^2 &= c^2(dx^2 + dy^2)\\
+	\frac{dz}{dx} = \frac{\sqrt{n(z)^2 -c^2}}{c} &= \frac{\sqrt{(n_0+\alpha\cdot z)^2 -c^2}}{c}
+\end{align*}
+The above first-order nonlinear ordinary differential equation has been solved using wolfram and is displayed below in \ref{eq:magic_wolfram}. In this equation $k$ is an arbritary constant and $c$ is the total path length. $\alpha$ is the defined linearisation constant.
+\begin{equation}
+	z(x)=-\frac{c^2 \exp{(\alpha x + \alpha k)/c}+\exp{-(\alpha x + \alpha k)/c}-2n_0}{2 \alpha}
+	\label{eq:magic_wolfram}
+\end{equation}
+\textit{\underline{Plot} several of these trajectories for different relevant cases.}\\
+Below in figure \ref{fig:traj} a few trajectories for different $\alpha$-values are plotted. These values range from $\alpha = 7.77 \cdot 10^{-7}$ the linearisation constant equal to $d/dz \cdot n(z)\rvert_{z=0}$ to the same constant a magnitude larger.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth,keepaspectratio]{afbeeldingen/light path.png}
+	\label{fig:traj}
+\end{figure}
 
 
 \end{document}

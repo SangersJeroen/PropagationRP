@@ -24,6 +24,7 @@
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 %Als we extra packages willen laden kan dat het best in structure.tex
 
+
 % Define matices for pretty functions
 \def\r{
 	\begin{pmatrix}
@@ -58,7 +59,7 @@
 
 \section{Principle of Fermat}
 
-\textit{\underline{Question:} Proof that \ref{eq_1.3} and \ref{eq_1.4} can be reduced to equation \ref{eq_1.6}.} \\
+\textit{\underline{Question:} Proof that equation \ref{eq_1.3} and \ref{eq_1.4} can be reduced to equation \ref{eq_1.6}.} \\
 
 \begin{equation}
 	\label{eq_1.3}
@@ -73,8 +74,7 @@
 \begin{equation}
 	\label{eq_1.6}
 	\frac{d}{ds} \left[ n \frac{d \vec{r}}{ds} \right] = \vec{\nabla} n
-\end{equation}
-
+\end{equation} \\
 \textit{\underline{Answer:}}\\
 \\
 First noting that $ds$ is a small element of distance travelled. Therefore taking into account the $x$, $y$ and $z$ direction, $ds$ is given by: \\
@@ -139,7 +139,7 @@ Equation \ref{eq_1.6} can be rewritten using the chain rule: \\
 
 \begin{equation}
 	\frac{d \vec{r}}{ds} \frac{d}{ds} n + n \frac{d^2 \vec{r}}{ds^2} = \Nabla n
-\end{equation}
+\end{equation} \\
 
 Note that for a homogeneous medium, the index of refraction, $n$, is constant. Therefore $\frac{dn}{ds} = 0$, $\frac{\partial n}{\partial x} = 0$, $\frac{\partial n}{\partial y} = 0$ and $\frac{\partial n}{\partial z} = 0$. Using this in the previous equation yields: \\
 
@@ -149,10 +149,119 @@ Note that for a homogeneous medium, the index of refraction, $n$, is constant. T
 
 \begin{equation}
 	 \frac{d^2 \vec{r}}{ds^2} = \vec{0}
-\end{equation}
+\end{equation} \\
 
 
 This implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity of $ v = c/n $. \\
+
+\subsection{Snell-Descartes Law}
+
+\textit{\underline{Question:} Express first geometrically and then analytically Snell and Descartes law of reflection and transmission of the light at the interface between two media of different index of refraction $n_1$ and $n_2$, using the Principle of Fermat and equation \ref{eq_1.6}.}\\
+\\
+\textit{\underline{Answer:}} \\
+\\
+
+\subsubsection{Geometrical}
+The speed of light in a medium is inversely proportional to the refractive index. Therefore, the shortest path (in distance) between two points in materials with different refractive indices is not always the fastest (in time). This phenomenon is nicely described by a 2-dimensional analogy of a beach (see figure \ref{fig_snell_empty}). The maximum speed on foot on beach is significantly higher than the maximum swimming speed in the water. So if somebody would need to get from a point A on the beach to a point B in the water, the direct route from A to B (dashed line in figure \ref{fig_snell_empty}) would intuitively be slower than the path with a shorter swimming distance (solid line in figure \ref{fig_snell_empty}). 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=8cm]{afbeeldingen/snell_diagram_leeg.jpg}
+	\caption{Diagram of a 2-dimensional beach analogy of the interface between two media with different index of refraction. The upper-half corresponds to the beach and the lower-half to the sea. The dashed line corresponds to the direct route between point A and B with the shortest distance. The solid line corresponds to a route that is intuitively faster than the direct route.}
+	\label{fig_snell_empty}
+\end{figure}
+
+It is possible to calculate the fastest route between point A and B If we add the parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$ which corresponds respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in figure \ref{fig_snell_full}. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=8cm]{afbeeldingen/snell_diagram_vol.jpg}
+	\caption{Diagram of beach analogy parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$. These correspond respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in the diagram.}
+	\label{fig_snell_full}
+\end{figure} 
+
+The time it takes to travel from point A to B, $t$, can easily be found dividing the path on the beach and the water, respectively $l_{beach}$ and $l_{water}$ by the corresponding speed: 
+
+\begin{equation}
+	t = l_{beach}/v_1 + l_{water}/v_2
+\end{equation} 
+
+Using the pythagoras theorem we find: 
+
+\begin{equation}
+	t = \sqrt{a^2 + c^2}/v_1 + \sqrt{b^2 + (d-c)^2}/v_2
+	\label{eq_t}
+\end{equation} 
+
+If there is a fastest path, there should be an optimum value for $c$ for which $dt/dc = 0$. Therefore, applying the principle of Fermat to equation \ref{eq_t} leads to the following: 
+
+\begin{equation}
+	0 = \frac{c}{v_1 \sqrt{a^2 + c^2}} + \frac{c-d}{v_2 \sqrt{b^2 + (d-c)^2}}
+\end{equation}
+
+Using the trigonometric identity $sin(\theta) = (adjacent side)/(diagonal side)$ for right-angled triangle we obtain: 
+
+\begin{equation}
+	0 =  sin(\theta _1)/v_1 - sin(\theta _2)/v_2
+\end{equation}
+
+If we rewrite this and use the fact that the speed of light in a medium is given by $v = c/n$ we obtain Snell-Descartes law: 
+
+\begin{equation}
+	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2) 
+\end{equation}
+
+This equation basically tells us, that for a interface to a higher refractive index, so where the light slows down, the light bends to the normal. 
+
+\subsubsection{Analytical}
+
+For the analytical derivation of Snell-Descartes law we will use a similar diagram as in the geometrical derivation with a coordinate system added as in figure \ref{fig_snell_analytical}.
+
+\begin{figure}[h!]
+\centering
+  \begin{subfigure}[b]{0.6\textwidth}
+    \includegraphics[width=\textwidth]{afbeeldingen/snell_analytical.jpg}
+	\caption{Diagram of the path of light at the interface of two media with different refractive indices $n_1$ and $n_2$. $\theta _1$ and $\theta _2$ correspond to the angle with the normal.}
+	\label{fig_snell_analytical}
+  \end{subfigure}
+  %
+  \begin{subfigure}[b]{0.2\textwidth}
+    \includegraphics[width=\textwidth]{afbeeldingen/ds.jpg}
+	\caption{$ds$ in relation to $dx$ and $dy$.}
+	\label{fig_ds}
+  \end{subfigure}
+  \caption{}
+\end{figure}
+
+
+If we write equation \ref{eq_1.6} for only the x-component and use the fact that $n$ is independent of $x$ in our diagram, we get the following:
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = 0
+\end{equation}
+
+The $ds$ in the latter equation is defined as in figure \ref{fig_ds}. If we keep a fixed $ds$ for both media we obtain the following equality:
+
+\begin{equation}
+	\frac{d}{ds} \left[ n_1 \frac{d x_1}{ds} \right] = \frac{d}{ds} \left[ n_2 \frac{d x_2}{ds} \right]
+\end{equation}
+
+Rewriting and using the trigonometric identity, $sin(\theta)= dx/ds$, yields the Snell-Descartes law:
+
+\begin{equation}
+	n_1 \frac{d x_1}{ds}]=n_2 \frac{d x_2}{ds}
+\end{equation}
+
+\begin{equation}
+	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
+\end{equation}
+
+
+
 
 
 \end{document}

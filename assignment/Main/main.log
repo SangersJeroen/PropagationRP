@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  5 APR 2020 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  6 APR 2020 13:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -776,6 +776,10 @@ Package caption Info: listings package is loaded.
 \c@subfigure=\count302
 \c@subtable=\count303
 )
+("C:\Users\vanlo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/comment\comment.st
+y"
+\CommentStream=\write4
+ Excluding comment 'comment')
 ("C:\Users\vanlo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
 sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -1435,34 +1439,80 @@ File: afbeeldingen/ds.jpg Graphic file (type jpg)
 <use afbeeldingen/ds.jpg>
 Package pdftex.def Info: afbeeldingen/ds.jpg  used on input line 229.
 (pdftex.def)             Requested size: 91.04742pt x 83.60835pt.
- [4 <./afbeeldingen/snell_analytical.jpg> <./afbeeldingen/ds.jpg>]
-(main.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+[4 <./afbeeldingen/snell_analytical.jpg> <./afbeeldingen/ds.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 273--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+<afbeeldingen/fibre_3d.jpg, id=32, 409.32756pt x 184.62253pt>
+File: afbeeldingen/fibre_3d.jpg Graphic file (type jpg)
+<use afbeeldingen/fibre_3d.jpg>
+Package pdftex.def Info: afbeeldingen/fibre_3d.jpg  used on input line 282.
+(pdftex.def)             Requested size: 199.16928pt x 89.8348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--291
+
+ []
+
+<afbeeldingen/fibre_2d.jpg, id=33, 276.93378pt x 210.12958pt>
+File: afbeeldingen/fibre_2d.jpg Graphic file (type jpg)
+<use afbeeldingen/fibre_2d.jpg>
+Package pdftex.def Info: afbeeldingen/fibre_2d.jpg  used on input line 294.
+(pdftex.def)             Requested size: 142.26378pt x 107.947pt.
+[5 <./afbeeldingen/fibre_3d.jpg> <./afbeeldingen/fibre_2d.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 323--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--327
+
+ []
+
+[6] [7] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 20420 strings out of 480934
- 385918 string characters out of 2899917
- 626711 words of memory out of 3000000
- 35875 multiletter control sequences out of 15000+200000
+ 20474 strings out of 480934
+ 386972 string characters out of 2899917
+ 627661 words of memory out of 3000000
+ 35923 multiletter control sequences out of 15000+200000
  590209 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,10n,77p,904b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/x
-charter/xch_uy5hgr.enc}<C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/xcharter/XCharter-Bold.pfb><C:/Users/vanlo/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Users/vanlo/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C
-:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/vanlo/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vanlo/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/User
-s/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.p
-fb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb>
-Output written on main.pdf (4 pages, 668792 bytes).
+{C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/xcharter/xch_uy5hgr.enc}<C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Users/vanlo/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Users/va
+nlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roma
+n.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/vanlo/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/vanlo/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/v
+anlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+<C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on main.pdf (7 pages, 774723 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

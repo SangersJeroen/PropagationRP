@@ -250,15 +250,181 @@ The $ds$ in the latter equation is defined as in figure \ref{fig_ds}. If we keep
 	\frac{d}{ds} \left[ n_1 \frac{d x_1}{ds} \right] = \frac{d}{ds} \left[ n_2 \frac{d x_2}{ds} \right]
 \end{equation}
 
-Rewriting and using the trigonometric identity, $sin(\theta)= dx/ds$, yields the Snell-Descartes law:
+Integrating both sides with respect to $ds$ and using the trigonometric identity, $sin(\theta)= dx/ds$, yields the Snell-Descartes law:
 
 \begin{equation}
-	n_1 \frac{d x_1}{ds}]=n_2 \frac{d x_2}{ds}
+	n_1 \frac{d x_1}{ds}=n_2 \frac{d x_2}{ds}
 \end{equation}
 
 \begin{equation}
 	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
+	\label{eq_snell}
 \end{equation}
+
+
+\subsection{Optical fibre}
+
+\subsubsection{}
+
+\textit{\underline{Question:} If we assume an incoming beam in the $\vartheta _{x,y}$ plane at start crossing $\vartheta _x$ with an angle $\theta _0$. Show that the light beam will stay in this plane and that, by solving the Euler-Lagrange equation \ref{eq_1.6}, the equation for the beam path can be written as:}\\
+\begin{equation}
+	n \; sin(i) = a
+	\label{eq_2.1}
+\end{equation}
+\\
+\textit{\underline{Answer:}} \\
+\\
+
+For this question it is assumed that the optical fibre is cylindrical with its axis $\vartheta _x$ (see figure \ref{fig_fibre_3d}). The incident-surface will therefore be in the $\vartheta _{y,z}$ plane.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=7cm]{afbeeldingen/fibre_3d.jpg}
+	\caption{3-dimensional diagram of fibre with incoming light beam making an angle $\theta _0$ with the $\vartheta _x$ axis.}
+	\label{fig_fibre_3d}
+\end{figure}
+
+When the incoming beam is in the $\vartheta _{x,y}$ plane, the angle with the normal is $\theta _0$ with $\vartheta _x$ in the $\vartheta _y$ direction and $\theta _z = 0$ in the $\vartheta _z$ direction. If we use Snell-Descartes law (equation \ref{eq_snell}) for $\theta _z$ with $\theta _{z,1} = 0$ we obtain $\theta _{z,2} = k \cdot \pi [rad]$ with $k = -1,0,1,2,...$. Therefore, the beam of light will stay in the $\vartheta _{x,y}$ plane at the interface when entering the optical fibre. \\
+It is the property of a cylinder that the outer surface is always perpendicular with the radius. For this light beam. Since the light beam is travelling in the $\vartheta _{x,y}$ direction, the outer surface it reaches will be in the $\vartheta _{x,z}$ plane. The angle with the surface normal in the $\vartheta _z$ axis is still zero. From the internal reflection it follows that the angle in  the $\vartheta _z$ axis will remain zero. Therefore, for every reflection at the outer surface, the beam will stay in the $\vartheta _{x,y}$ direction.\\
+\\ 
+Since we know that the beam will stay in the $\vartheta _{x,y}$ plane, the problem can  be simplified to a 2-dimensional problem (see figure \ref{fig_fibre_2d}). The infinitely small segment $ds$ is related to $ds$, $dy$, $dx$ and $i$ as in figure \ref{fig_fibre_2d}. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width = 5cm]{afbeeldingen/fibre_2d.jpg}
+	\caption{2-dimensional fibre including the relation between $ds$, $ds$, $dy$, $dx$ and $i$.}
+	\label{fig_fibre_2d}
+\end{figure}
+
+We can write equtaion \ref{eq_1.6} for only the x-component and use that $n$ is independent of $x$:
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx}
+\end{equation}
+
+\begin{equation}
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = 0
+\end{equation}
+
+If we now integrate with respect to $ds$ on both sides we get the following:
+
+\begin{equation}
+	n \frac{d x}{ds} = a
+\end{equation}
+
+With $a$ an arbitrary constant. Using the trigonometric identity $sin(i)= dx/ds$ we obtain the requested equation:
+
+\begin{equation}
+	n \; sin(i) = a
+\end{equation}
+
+\subsubsection{}
+
+\textit{\underline{Question:} Solve equation \ref{eq_2.1} for $n(r) = n_0 \sqrt{1 - \alpha ^2 r^2}$ with $\alpha < 1/r$ a constant and $r$ the radius of the fibre.You should end up with an analytical function.}
+\\
+\textit{\underline{Answer:}} \\
+\\
+
+
+
+From figure \ref{fig_fibre_2d} and trigonometric identities it follows that $ sin(i) = dx/ds$. Using the Pythagoras theorem and filling this in in equation \ref{eq_2.1} we get:
+
+\begin{equation}
+	n  \frac{dx}{\sqrt{dr^2 + dx^2}} = a
+\end{equation}
+
+Filling in $n(r)$ and some rewriting results in the following:
+
+\begin{equation}
+	n_0 \sqrt{1 - \alpha ^2 r^2}  \frac{dx}{\sqrt{dr^2 + dx^2}} = a
+\end{equation}
+
+\begin{equation}
+	n_0^2 (1 - \alpha ^2 r^2)  \frac{dx^2}{dr^2 + dx^2} = a^2
+\end{equation}
+
+\begin{equation}
+	n_0^2 (1 - \alpha ^2 r^2)  dx^2 = a^2 (dr^2 + dx^2)
+\end{equation}
+
+\begin{equation}
+	(n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2)  dx^2 = a^2 dr^2
+\end{equation}
+
+\begin{equation}
+	dx^2 =\frac{a^2 dr^2}{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}
+\end{equation}
+
+\begin{equation}
+	dx =\frac{a \; dr}{\sqrt{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}}
+\end{equation}
+
+If we now integrate both sides we will get:
+
+\begin{equation}
+	\int dx = \int \frac{a}{\sqrt{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}} dr
+\end{equation}
+
+\begin{equation}
+	x = \frac{a}{\sqrt{n_0^2 - a^2}} \int \frac{1}{1 - \left( \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} \right) ^2} dr
+\end{equation}
+
+To solve this integral we need the following substitution:
+
+\begin{equation}
+	 \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} = sin(u)
+\end{equation}
+
+\begin{equation}
+	 dr = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} cos(u) du
+\end{equation} 
+
+\begin{equation}
+	 u = arcsin \left( \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} \right)
+\end{equation}
+
+Using the substitution we get:
+
+\begin{equation}
+	x = \frac{a}{n_0 \; \alpha} \int \frac{\cos (u)}{\sqrt{1 - \sin^2 (u)}} du
+\end{equation}
+
+If we use that $1 - \sin^2 (x) = \cos^2 (x)$, we obtain:
+
+\begin{equation}
+	x = \frac{a}{n_0 \; \alpha} \int \frac{\cos (u)}{\sqrt{\cos^2 (u)}} du
+\end{equation}
+
+\begin{equation}
+	x = \frac{a}{n_0 \; \alpha} \int du
+\end{equation}
+
+\begin{equation}
+	x = \frac{a}{n_0 \; \alpha} u
+\end{equation}
+
+Inverting the substitution and doing some rewriting yields the following equation:
+
+\begin{equation}
+	x = \frac{a}{n_0 \; \alpha} arcsin \left( \frac{r \; n_0 \; \alpha}{\sqrt{n_0^2-a^2}} \right)
+\end{equation}
+
+\begin{equation}
+	\sin \left( \frac{n_0 \; \alpha \; r}{a} \right) =  \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}}
+\end{equation}
+
+\begin{equation}
+	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a} \right) 
+\end{equation}
+
+The 
+Since there are no discontinuities in $n(r)$ and $dn(r)/dr$, we would expect that there are also no discontinuities in $r(x)$ and $dr(x)/dx$. Since $r = \mid y \mid$ for the light beam in the $\vartheta _{x,y}$ plane. The only possible solution of $y(x)$ is the following:
+
+\begin{equation}
+	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a}\right) 
+\end{equation}
+
+
 
 
 

@@ -17,20 +17,32 @@ n0 = 1.0002512365013845
 alpha = -7.77e-5
 theta = 30
 c = np.sin(np.pi/180*theta)
-x = np.linspace(0,1000,10000)
+x = np.linspace(-600,1500,10000)
 k = 0
 
-def z(x,k,c):
+def z(x,k,c,alpha):
     return c**2 *(-np.exp(alpha*x/c + alpha*k) -np.exp(-alpha*x/c -alpha*k) + 2*n0)/(2*alpha)
 
-zx = z(x,k,c)
-dzdx = np.asarray([])
-for i in range(1,len(zx)-1):
-    dzdx = np.append(dzdx, (zx[i+1]-zx[i])/(x[i+1]-x[i]))
-    angle = np.arcsin(dzdx)*180/np.pi
+def dzdx(array):
+    dzdx = np.asarray([])
+    for j in range(1,len(array)-1):
+        dzdx = np.append(dzdx, (array[j+1]-array[j])/(x[j+1]-x[j]))
+    return np.arcsin(dzdx)*180/np.pi
 
-print(zx[0],zx[-1])
-plt.plot(x,zx, label="optical path")
-plt.plot(x[1:-1],angle, label="path angle with horizontal")
-plt.legend()
+""" for i in np.linspace(alpha,10*alpha,5):
+    zx = z(x,k,c,i)
+    angle = dzdx(zx)
+    plt.plot(x, zx, label=r"$\alpha = {:.2E}$".format(-i))
+    #plt.plot(x[1:-1], angle, label="Angle") """
+
+plt.subplot(121)
+plt.plot(x,z(x,k,c,alpha), label="Optical path")
+plt.xlabel(r"distance $x$ [$m$]")
+plt.ylabel(r"height $z$ [$m$]")
+
+plt.subplot(122)
+plt.plot(x[1:-1],dzdx(z(x,k,c,alpha)), label="Angle with horizontal")
+plt.xlabel(r"distance $x$ [$m$]")
+plt.ylabel(r"angle $\theta$ [$\degree$]")
+
 plt.show()

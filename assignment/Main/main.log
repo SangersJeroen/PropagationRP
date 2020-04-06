@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  5 APR 2020 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.10)  6 APR 2020 14:17
 entering extended mode
 **c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex
 (c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex
@@ -1515,23 +1515,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
  []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 
-Package caption Warning: \label without proper reference on input line 361.
+ []
+
+
+Package caption Warning: \label without proper reference on input line 362.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:traj' on page 7 undefined on input line 356.
+LaTeX Warning: Reference `fig:paths' on page 7 undefined on input line 357.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--357
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 <afbeeldingen/light path.png, id=45, 462.528pt x 346.896pt>
 File: afbeeldingen/light path.png Graphic file (type png)
 <use afbeeldingen/light path.png>
-Package pdftex.def Info: afbeeldingen/light path.png  used on input line 360.
+Package pdftex.def Info: afbeeldingen/light path.png  used on input line 361.
 (pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
+
+ []
+
 [7 <c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/afbeeldingen/light path.png>] (c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1539,14 +1548,14 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  30363 strings out of 492449
- 567417 string characters out of 3129676
- 614873 words of memory out of 3000000
+ 567418 string characters out of 3129676
+ 614874 words of memory out of 3000000
  34277 multiletter control sequences out of 15000+200000
  590209 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,77p,961b,598s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.pdf (7 pages, 1268333 bytes).
+Output written on c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.pdf (7 pages, 1270540 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

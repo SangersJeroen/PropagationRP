@@ -23,7 +23,7 @@
 
 \input{structure.tex} % Include the file specifying the document structure and custom commands
 %Als we extra packages willen laden kan dat het best in structure.tex
-
+\usepackage{listings}
 
 % Define matices for pretty functions
 \def\r{
@@ -393,8 +393,8 @@ For this question it is assumed that the optical fibre is cylindrical with its a
 
 When the incoming beam is in the $\vartheta _{x,y}$ plane, the angle with the normal is $\theta _0$ with $\vartheta _x$ in the $\vartheta _y$ direction and $\theta _z = 0$ in the $\vartheta _z$ direction. If we use Snell-Descartes law (equation \ref{eq_snell}) for $\theta _z$ with $\theta _{z,1} = 0$ we obtain $\theta _{z,2} = k \cdot \pi [rad]$ with $k = -1,0,1,2,...$. Therefore, the beam of light will stay in the $\vartheta _{x,y}$ plane at the interface when entering the optical fibre. \\
 It is the property of a cylinder that the outer surface is always perpendicular with the radius. For this light beam. Since the light beam is travelling in the $\vartheta _{x,y}$ direction, the outer surface it reaches will be in the $\vartheta _{x,z}$ plane. The angle with the surface normal in the $\vartheta _z$ axis is still zero. From the internal reflection it follows that the angle in  the $\vartheta _z$ axis will remain zero. Therefore, for every reflection at the outer surface, the beam will stay in the $\vartheta _{x,y}$ direction.\\
-\\ 
-Since we know that the beam will stay in the $\vartheta _{x,y}$ plane, the problem can  be simplified to a 2-dimensional problem (see figure \ref{fig_fibre_2d}). The infinitely small segment $ds$ is related to $ds$, $dy$, $dx$ and $i$ as in figure \ref{fig_fibre_2d}. 
+\\
+Since we know that the beam will stay in the $\vartheta _{x,y}$ plane, the problem can  be simplified to a 2-dimensional problem (see figure \ref{fig_fibre_2d}). The infinitely small segment $ds$ is related to $ds$, $dy$, $dx$ and $i$ as in figure \ref{fig_fibre_2d}.
 
 \begin{figure}[h!]
 	\centering
@@ -464,6 +464,7 @@ Filling in $n(r)$ and some rewriting results in the following:
 
 \begin{equation}
 	dx =\frac{a \; dr}{\sqrt{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}}
+	\label{eq:drdx}
 \end{equation}
 
 If we now integrate both sides we will get:
@@ -484,7 +485,7 @@ To solve this integral we need the following substitution:
 
 \begin{equation}
 	 dr = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} cos(u) du
-\end{equation} 
+\end{equation}
 
 \begin{equation}
 	 u = arcsin \left( \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} \right)
@@ -521,16 +522,41 @@ Inverting the substitution and doing some rewriting yields the following equatio
 \end{equation}
 
 \begin{equation}
-	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a} \right) 
+	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a} \right)
 \end{equation}
 
-The 
+The
 Since there are no discontinuities in $n(r)$ and $dn(r)/dr$, we would expect that there are also no discontinuities in $r(x)$ and $dr(x)/dx$. Since $r = \mid y \mid$ for the light beam in the $\vartheta _{x,y}$ plane. The only possible solution of $y(x)$ is the following:
 
 \begin{equation}
-	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a}\right) 
+	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a}\right)
 \end{equation}
 
+\textit{\underline{Plot:} a numerical solution of the problem.}
+To plot a numerical solution we use equation \ref{eq:drdx} and rewrite it to get a fraction $dr/dx$. We will then plot this function using the python script below. There is one problem however, since we used equation  \ref{eq:drdx} we can only get the part of the solution where $(dr/dx)^2$ was positive.\\
 
+\lstinputlisting[language=Python]{../../python/plot_fiber.py}
+
+Using this code the folowing plot for the numerical solution was made \ref{fig:numersolut}. Where the horizontal and vertical axis are normalised to $R$, the radius of the fiber.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.55\linewidth,keepaspectratio]{afbeeldingen/numerical_solution.png}
+	\caption{The numerical solution}
+	\label{fig:numersolut}
+\end{figure}
+
+\textit{\underline{Compare:} the numerical solution of the problem with an analytical one.}
+The above Python code was also used to plot the analytical solution. Both are show in figure \ref{fig:bothsolutions}. As can be seen in the figure the numerical solution approximates the analytical solution pretty well, up to the point where the derivative becomes negative.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.55\linewidth,keepaspectratio]{afbeeldingen/numerical_and_analytical.png}
+	\caption{The analytical and numerical solution}
+	\label{fig:bothsolutions}
+\end{figure}
+
+\textit{\underline{Explain:} what is the advantage of such a fiber?}
+When using a alpha-peak profile for the refractive index of the fiber it is possible to use more modes of light more efficiently since for a certain shape factor $\alpha$ the multimode distortion for this profile is the smallest possible. When more modes of light can be used the cable has a higher bandwidth.
 
 \end{document}

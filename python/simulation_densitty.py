@@ -38,12 +38,12 @@ def index(c,z):
 
 z = np.linspace(0,100,1001)
 
-c = 1
+c = 100
 
 #rho = rho(c,z)
 n = index(c,z)
 
-print(n[0],(n[-1]-n[0])/(z[-1]-z[0]))
+print(n[0],(n[1]-n[0])/(z[1]-z[0]))
 
 
 plt.subplot(131)

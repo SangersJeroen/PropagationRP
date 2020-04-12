@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1586547121 "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.pdf" "main" 1586547125
+["pdflatex"] 1586714787 "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.pdf" "main" 1586714791
   "../../python/plot_fiber.py" 1586544239 961 c00aa3b1d40125bf61e4df7bfb740330 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1001775420 2971 def0b6c1f0b107b3b936def894055589 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/xcharter/xch_uy5hgr.enc" 1566088030 3245 1a602e5c47d185e5d5f34ca2e7098e98 ""
@@ -216,14 +216,14 @@
   "afbeeldingen/snell_analytical.jpg" 1586528459 123299 3dcc7a12c8b6f25a71436edf07d7fe27 ""
   "afbeeldingen/snell_diagram_leeg.jpg" 1586528459 121336 80f8e7fcae3225e875d85b53e4f07e09 ""
   "afbeeldingen/snell_diagram_vol.jpg" 1586528459 143511 380513fad70e9353924efe52af1338c3 ""
-  "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" 1586547120 26261 6ffab12df6786d818b8ca444c7c2dede ""
-  "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.aux" 1586547124 4077 9835865f52bb37063c6fae57a9ca611e ""
-  "main.aux" 1586547124 4077 9835865f52bb37063c6fae57a9ca611e "pdflatex"
-  "main.tex" 1586547120 26261 6ffab12df6786d818b8ca444c7c2dede ""
+  "c:/Users/Gebruiker/Documents/PropagationRP/assignment/Main/main.tex" 1586714786 26781 e19ea1b3c24b86cdecc1d41a4341da5b ""
+  "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.aux" 1586714790 4077 9835865f52bb37063c6fae57a9ca611e ""
+  "main.aux" 1586714790 4077 9835865f52bb37063c6fae57a9ca611e "pdflatex"
+  "main.tex" 1586714786 26781 e19ea1b3c24b86cdecc1d41a4341da5b ""
   "structure.tex" 1586528480 6842 aa6ddb16a5b9f3f165d6fdbf2b7ef170 ""
   (generated)
   "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.pdf"
   "main.log"
-  "main.pdf"
-  "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.log"
   "main.aux"
+  "c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main/main.log"
+  "main.pdf"

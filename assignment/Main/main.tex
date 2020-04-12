@@ -152,15 +152,14 @@ Note that for a homogeneous medium, the index of refraction, $n$, is constant. T
 \end{equation} \\
 
 
-This implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity of $ v = c/n $. \\
+This implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity.\\
 
+\newpage
 \subsection{Snell-Descartes Law}
 
 \textit{\underline{Question:} Express first geometrically and then analytically Snell and Descartes law of reflection and transmission of the light at the interface between two media of different index of refraction $n_1$ and $n_2$, using the Principle of Fermat and equation \ref{eq_1.6}.}\\
 \\
 \textit{\underline{Answer:}} \\
-\\
-
 \subsubsection{Geometrical}
 The speed of light in a medium is inversely proportional to the refractive index. Therefore, the shortest path (in distance) between two points in materials with different refractive indices is not always the fastest (in time). This phenomenon is nicely described by a 2-dimensional analogy of a beach (see figure \ref{fig_snell_empty}). The maximum speed on foot on beach is significantly higher than the maximum swimming speed in the water. So if somebody would need to get from a point A on the beach to a point B in the water, the direct route from A to B (dashed line in figure \ref{fig_snell_empty}) would intuitively be slower than the path with a shorter swimming distance (solid line in figure \ref{fig_snell_empty}).
 
@@ -176,7 +175,7 @@ It is possible to calculate the fastest route between point A and B If we add th
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=8cm]{afbeeldingen/snell_diagram_vol.jpg}
-	\caption{Diagram of beach analogy parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$. These correspond respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in the diagram.}
+	\caption{Diagram of beach analogy with parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$. These correspond respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in the diagram.}
 	\label{fig_snell_full}
 \end{figure}
 
@@ -199,7 +198,14 @@ If there is a fastest path, there should be an optimum value for $c$ for which $
 	0 = \frac{c}{v_1 \sqrt{a^2 + c^2}} + \frac{c-d}{v_2 \sqrt{b^2 + (d-c)^2}}
 \end{equation}
 
-Using the trigonometric identity $sin(\theta) = (adjacent side)/(diagonal side)$ for right-angled triangle we obtain:
+We now need the following trigonometric identity for right-angled triangles:
+ 
+\begin{equation}
+	sin(\theta) = (adjacent-side)/(diagonal-side) 
+	\label{eq_sin_identity}
+\end{equation}
+
+Filling in this identity yields:
 
 \begin{equation}
 	0 =  sin(\theta _1)/v_1 - sin(\theta _2)/v_2
@@ -219,12 +225,12 @@ For the analytical derivation of Snell-Descartes law we will use a similar diagr
 
 \begin{figure}[h!]
 \centering
-  \begin{subfigure}[b]{0.6\textwidth}
+  \begin{subfigure}[b]{0.3\textwidth}
     \includegraphics[width=\textwidth]{afbeeldingen/snell_analytical.jpg}
 	\caption{Diagram of the path of light at the interface of two media with different refractive indices $n_1$ and $n_2$. $\theta _1$ and $\theta _2$ correspond to the angle with the normal.}
 	\label{fig_snell_analytical}
   \end{subfigure}
-  %
+  \hspace{0.1\textwidth}
   \begin{subfigure}[b]{0.2\textwidth}
     \includegraphics[width=\textwidth]{afbeeldingen/ds.jpg}
 	\caption{$ds$ in relation to $dx$ and $dy$.}
@@ -250,7 +256,7 @@ The $ds$ in the latter equation is defined as in figure \ref{fig_ds}. If we keep
 	\frac{d}{ds} \left[ n_1 \frac{d x_1}{ds} \right] = \frac{d}{ds} \left[ n_2 \frac{d x_2}{ds} \right]
 \end{equation}
 
-Integrating both sides with respect to $ds$ and using the trigonometric identity, $sin(\theta)= dx/ds$, yields the Snell-Descartes law:
+Integrating both sides with respect to $ds$ and using the trigonometric identity from equation \ref{eq_sin_identity} yields the Snell-Descartes law:
 
 \begin{equation}
 	n_1 \frac{d x_1}{ds}=n_2 \frac{d x_2}{ds}
@@ -261,11 +267,14 @@ Integrating both sides with respect to $ds$ and using the trigonometric identity
 	\label{eq_snell}
 \end{equation}
 
+\newpage
 \subsection{Mirage}
-The mirage is a common phenomenon when the ground is very warm and the temperature of the air decreases with altitude; in this case the density then increases as well as its index of refraction.\\
-\vspace{3mm}
-\textit{\underline{Sketch} what is happening.}\\
-In figure \ref{fig:mirage} a situation in which a mirage occurs has been sketched. In this figure a few parameters were introduced, an $x$- and $z$-distance respectivly denoting the horizontal and vertical distance from the feet of the observer and an angle $\Theta$ which is the angle between the horizontal and the unbent light path from the observer. A gradient effect is also applied to the image, where the colour is darker the index of refraction is higher.\\
+
+\textit{\underline{Question:} The mirage is a common phenomenon when the ground is very warm and the temperature of the air decreases with altitude; in this case the density then increases as well as its index of refraction.\\
+\underline{Sketch} what is happening.}\\
+\\
+\textit{\underline{Answer:}} \\
+In figure \ref{fig:mirage} a situation in which a mirage occurs has been sketched. In this figure a few parameters were introduced, an $x$- and $z$-distance respectively denoting the horizontal and vertical distance from the feet of the observer and an angle $\Theta$ which is the angle between the horizontal and the unbent light path from the observer. A gradient effect is also applied to the image, where the colour is darker the index of refraction is higher.\\
 Since the index of refraction of the air varies with the temperature and the temperature increases as the $z$-coordinate increases, the path of light rays will be bent. Thus there will be a light ray coming from the sky bending in such a way that it lands in the eye of an observer. This is the mirage effect where light follows a different path than one might expect.\\
 
 \begin{figure}[h!]
@@ -274,10 +283,10 @@ Since the index of refraction of the air varies with the temperature and the tem
 	\caption{A sketch of situation where a mirage effect occurs.}
 	\label{fig:mirage}
 \end{figure}
-
-
-\textit{\underline{Find} the relation between the index of refraction with the altitude if we assume that the gradient of the temperature changes linearily with the altituder.}\\
-In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$, the Gladstone-Dale relation is used. In equation \ref{eq:glad-dale} this relation is shown with a proportionality constant $K_{air}$. Finally using the equation of state \ref{eq:thermo_formula} it is possible to relate the index of refraction $n$ to height $z$. Finding the relation for the pressure at height $P(z)$ is show below in the derivation and the result is displayed in equation \ref{eq:pressure}.\\
+\textit{\underline{Question:} Find the relation between the index of refraction with the altitude if we assume that the gradient of the temperature changes linearly with the altitude.}\\
+\\
+\textit{\underline{Answer:}} \\
+In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$, the Gladstone-Dale relation is used. In equation \ref{eq:glad-dale} this relation is shown with a proportionality constant $K_{air}$. Finally using the equation of state (equation \ref{eq:thermo_formula}), it is possible to relate the index of refraction $n$ to height $z$. Finding the relation for the pressure at height $P(z)$ is shown below in the derivation and the result is displayed in equation \ref{eq:pressure}.\\
 \begin{equation}
 	T(z) = T_0 - c \cdot z
 	\label{eq:temp}
@@ -325,7 +334,9 @@ After deriving equation \ref{eq:pressure} it is know possible to use both equati
 	n(z) = K_{air}\rho + 1 = 1 + \frac{P_0 K_{air}}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
 	\label{eq:n_for_z}
 \end{equation}
-\textit{\underline{Express} analytically the trajectory of the light in this situation.}\\
+\textit{\underline{Question:} Express analytically the trajectory of the light in this situation.}\\
+\\
+\textit{\underline{Answer:}} \\
 For an analytical solution it is easier to linearise equation \ref{eq:n_for_z}.
 \begin{align*}
 	n_l(z) &= n_0 + \alpha \cdot z\\
@@ -348,13 +359,14 @@ To get to an analytical solution; equation \ref{eq_1.6} needs to be solved. This
 	n(z)^2 \cdot dx^2 &= c^2(dx^2 + dy^2)\\
 	\frac{dz}{dx} = \frac{\sqrt{n(z)^2 -c^2}}{c} &= \frac{\sqrt{(n_0+\alpha\cdot z)^2 -c^2}}{c}
 \end{align*}
-The above first-order nonlinear ordinary differential equation has been solved using wolfram and is displayed below in \ref{eq:magic_wolfram}. In this equation $k$ is an arbritary constant and $c$ is the total path length. $\alpha$ is the defined linearisation constant.
+The above first-order non-linear ordinary differential equation has been solved using wolfram and is displayed below in equation \ref{eq:magic_wolfram}. In this equation, $k$ is an arbitrary constant and $c$ is the total path length. $\alpha$ is the defined linearisation constant.
 \begin{equation}
 	z(x)=-\frac{c^2 \exp{(\alpha x + \alpha k)/c}+\exp{-(\alpha x + \alpha k)/c}-2n_0}{2 \alpha}
 	\label{eq:magic_wolfram}
 \end{equation}
-\textit{\underline{Plot} several of these trajectories for different relevant cases.}\\
-
+\textit{\underline{Question:} Plot several of these trajectories for different relevant cases.}\\
+\\
+\textit{\underline{Answer:}} \\
 Below in figure \ref{fig:paths} a few trajectories for different $\alpha$-values are plotted. These values range from $\alpha = 7.77 \cdot 10^{-7}$ the linearisation constant equal to $d/dz \cdot n(z)\rvert_{z=0}$ to the same constant a magnitude larger.\\
 
 \begin{figure}[h!]
@@ -363,10 +375,14 @@ Below in figure \ref{fig:paths} a few trajectories for different $\alpha$-values
 	\label{fig:paths}
 \end{figure}
 
-\textit{\underline{Find the closest distance} from an observer where a mirage can be visible.}\\
-In the figure above an $\alpha$-value was used, this value was equal to the derivate of our index of refraction function $n(z)$ evealuated at $x=0$. This value was dependant on the ground temperature $T_0$, the ground pressure $P_0$ and the lapse rate of the temperature $c$. For these the following values were used: $T_0$ $=$ $323.15$ $K$, $P_0$ $=$ $101325$ $Pa$, a lapse rate of $c$ $=$ $1$ $K/m$ and an initial angle of looking down $\theta$ $=$ $15$ degrees. With these conditions you would see the mirage about 500 $m$ in front of you.\\
+\textit{\underline{Question:} Find the closest distance from an observer where a mirage can be visible.}\\
+\\
+\textit{\underline{Answer:}} \\
+In the figure above an $\alpha$-value was used, this value was equal to the derivative of our index of refraction function $n(z)$ evaluated at $x=0$. This value was dependant on the ground temperature $T_0$, the ground pressure $P_0$ and the lapse rate of the temperature $c$. For these the following values were used: $T_0$ $=$ $323.15$ $K$, $P_0$ $=$ $101325$ $Pa$, a lapse rate of $c$ $=$ $1$ $K/m$ and an initial angle of looking down $\theta$ $=$ $15$ degrees. With these conditions you would see the mirage about 500 $m$ in front of you.\\
 
-\textit{\underline{Forsee} what could happen on the north pole when a warm wind is present.}\\
+\textit{\underline{Question:} Forsee what could happen on the north pole when a warm wind is present.}\\
+\\
+\textit{\underline{Answer:}} \\
 On the North Pole with a warm wind blowing an inverse effect as described before would be seen, since the ground is cold and the air heats up as the height increases. The index of refraction $n$ would then decrease the higher off the ground. Light would then bend downward instead of up allowing you to see the ground when you look at the sky.
 
 \subsection{Optical fibre}
@@ -390,11 +406,11 @@ For this question it is assumed that the optical fibre is cylindrical with its a
 	\caption{3-dimensional diagram of fibre with incoming light beam making an angle $\theta _0$ with the $\vartheta _x$ axis.}
 	\label{fig_fibre_3d}
 \end{figure}
-
 When the incoming beam is in the $\vartheta _{x,y}$ plane, the angle with the normal is $\theta _0$ with $\vartheta _x$ in the $\vartheta _y$ direction and $\theta _z = 0$ in the $\vartheta _z$ direction. If we use Snell-Descartes law (equation \ref{eq_snell}) for $\theta _z$ with $\theta _{z,1} = 0$ we obtain $\theta _{z,2} = k \cdot \pi [rad]$ with $k = -1,0,1,2,...$. Therefore, the beam of light will stay in the $\vartheta _{x,y}$ plane at the interface when entering the optical fibre. \\
 It is the property of a cylinder that the outer surface is always perpendicular with the radius. For this light beam. Since the light beam is travelling in the $\vartheta _{x,y}$ direction, the outer surface it reaches will be in the $\vartheta _{x,z}$ plane. The angle with the surface normal in the $\vartheta _z$ axis is still zero. From the internal reflection it follows that the angle in  the $\vartheta _z$ axis will remain zero. Therefore, for every reflection at the outer surface, the beam will stay in the $\vartheta _{x,y}$ direction.\\
 \\
 Since we know that the beam will stay in the $\vartheta _{x,y}$ plane, the problem can  be simplified to a 2-dimensional problem (see figure \ref{fig_fibre_2d}). The infinitely small segment $ds$ is related to $ds$, $dy$, $dx$ and $i$ as in figure \ref{fig_fibre_2d}.
+
 
 \begin{figure}[h!]
 	\centering
@@ -419,7 +435,7 @@ If we now integrate with respect to $ds$ on both sides we get the following:
 	n \frac{d x}{ds} = a
 \end{equation}
 
-With $a$ an arbitrary constant. Using the trigonometric identity $sin(i)= dx/ds$ we obtain the requested equation:
+With $a$ an arbitrary constant. From  equation \ref{eq_sin_identity} it follows that $sin(i) = dx/ds$. Using this, we obtain the requested equation:
 
 \begin{equation}
 	n \; sin(i) = a
@@ -427,109 +443,105 @@ With $a$ an arbitrary constant. Using the trigonometric identity $sin(i)= dx/ds$
 
 \subsubsection{}
 
-\textit{\underline{Question:} Solve equation \ref{eq_2.1} for $n(r) = n_0 \sqrt{1 - \alpha ^2 r^2}$ with $\alpha < 1/r$ a constant and $r$ the radius of the fibre.You should end up with an analytical function.}
+\textit{\underline{Question:} Solve equation \ref{eq_2.1} for $n(r) = n_0 \sqrt{1 - \alpha ^2 r^2}$ with $\alpha < 1/r$ a constant and $r$ the radius of the fibre.You should end up with an analytical function.}\\
 \\
 \textit{\underline{Answer:}} \\
-\\
+From figure \ref{fig_fibre_2d} and equation \ref{eq_sin_identity} it follows that $ sin(i) = dx/ds$. Using this and the Pythagoras theorem in equation \ref{eq_2.1} yields:
 
-
-
-From figure \ref{fig_fibre_2d} and trigonometric identities it follows that $ sin(i) = dx/ds$. Using the Pythagoras theorem and filling this in in equation \ref{eq_2.1} we get:
-
-\begin{equation}
+\begin{equation*}
 	n  \frac{dx}{\sqrt{dr^2 + dx^2}} = a
-\end{equation}
+\end{equation*}
 
 Filling in $n(r)$ and some rewriting results in the following:
 
-\begin{equation}
+\begin{equation*}
 	n_0 \sqrt{1 - \alpha ^2 r^2}  \frac{dx}{\sqrt{dr^2 + dx^2}} = a
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	n_0^2 (1 - \alpha ^2 r^2)  \frac{dx^2}{dr^2 + dx^2} = a^2
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	n_0^2 (1 - \alpha ^2 r^2)  dx^2 = a^2 (dr^2 + dx^2)
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	(n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2)  dx^2 = a^2 dr^2
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	dx^2 =\frac{a^2 dr^2}{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}
-\end{equation}
+\end{equation*}
 
 \begin{equation}
 	dx =\frac{a \; dr}{\sqrt{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}}
 	\label{eq:drdx}
 \end{equation}
 
+
 If we now integrate both sides we will get:
 
-\begin{equation}
+\begin{equation*}
 	\int dx = \int \frac{a}{\sqrt{n_0 ^2 - n_0^2 \alpha ^2 r^2 - a^2}} dr
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	x = \frac{a}{\sqrt{n_0^2 - a^2}} \int \frac{1}{1 - \left( \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} \right) ^2} dr
-\end{equation}
+\end{equation*}
 
 To solve this integral we need the following substitution:
 
-\begin{equation}
-	 \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} = sin(u)
-\end{equation}
+\begin{equation*}
+	 \frac{r \; n_0 \; \alpha}{\sqrt{n_0^2-a^2}} = sin(u)
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	 dr = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} cos(u) du
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	 u = arcsin \left( \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}} \right)
-\end{equation}
+\end{equation*}
 
 Using the substitution we get:
 
-\begin{equation}
+\begin{equation*}
 	x = \frac{a}{n_0 \; \alpha} \int \frac{\cos (u)}{\sqrt{1 - \sin^2 (u)}} du
-\end{equation}
+\end{equation*}
 
 If we use that $1 - \sin^2 (x) = \cos^2 (x)$, we obtain:
 
-\begin{equation}
+\begin{equation*}
 	x = \frac{a}{n_0 \; \alpha} \int \frac{\cos (u)}{\sqrt{\cos^2 (u)}} du
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	x = \frac{a}{n_0 \; \alpha} \int du
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	x = \frac{a}{n_0 \; \alpha} u
-\end{equation}
+\end{equation*}
 
 Inverting the substitution and doing some rewriting yields the following equation:
 
-\begin{equation}
+\begin{equation*}
 	x = \frac{a}{n_0 \; \alpha} arcsin \left( \frac{r \; n_0 \; \alpha}{\sqrt{n_0^2-a^2}} \right)
-\end{equation}
+\end{equation*}
 
-\begin{equation}
-	\sin \left( \frac{n_0 \; \alpha \; r}{a} \right) =  \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}}
-\end{equation}
+\begin{equation*}
+	\sin \left( \frac{n_0 \; \alpha \; x}{a} \right) =  \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}}
+\end{equation*}
 
-\begin{equation}
-	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a} \right)
-\end{equation}
+\begin{equation*}
+	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a} \right) 
+\end{equation*}
 
-The
 Since there are no discontinuities in $n(r)$ and $dn(r)/dr$, we would expect that there are also no discontinuities in $r(x)$ and $dr(x)/dx$. Since $r = \mid y \mid$ for the light beam in the $\vartheta _{x,y}$ plane. The only possible solution of $y(x)$ is the following:
 
 \begin{equation}
-	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; r}{a}\right)
+	y(x) = \pm \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a}\right) 
 \end{equation}
 
 \textit{\underline{Plot:} a numerical solution of the problem.}

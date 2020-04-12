@@ -14,7 +14,7 @@ mpb.rcParams.update({
 
 #Defining a few constants
 n0 = 1.0002512365013845
-alpha = -7.77e-5
+alpha = -7.77e-7
 theta = 30
 c = np.sin(np.pi/180*theta)
 x = np.linspace(-600,1500,10000)
@@ -35,14 +35,14 @@ def dzdx(array):
     plt.plot(x, zx, label=r"$\alpha = {:.2E}$".format(-i))
     #plt.plot(x[1:-1], angle, label="Angle") """
 
-plt.subplot(121)
+""" plt.subplot(121) """
 plt.plot(x,z(x,k,c,alpha), label="Optical path")
 plt.xlabel(r"distance $x$ [$m$]")
 plt.ylabel(r"height $z$ [$m$]")
 
-plt.subplot(122)
+""" plt.subplot(122)
 plt.plot(x[1:-1],dzdx(z(x,k,c,alpha)), label="Angle with horizontal")
 plt.xlabel(r"distance $x$ [$m$]")
-plt.ylabel(r"angle $\theta$ [$\degree$]")
+plt.ylabel(r"angle $\theta$ [$\degree$]") """
 
 plt.show()

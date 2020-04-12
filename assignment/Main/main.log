@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  6 APR 2020 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  12 APR 2020 15:11
 entering extended mode
 **./main.tex
 (main.tex
@@ -1198,8 +1198,7 @@ TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 58.
-
-No file main.aux.
+ (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -1219,6 +1218,7 @@ LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 58.
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5
 8.
+
 ("C:\Users\vanlo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2acmr.fd
 "
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
@@ -1314,19 +1314,6 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 2.
 ("C:\Users\vanlo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmaryrd\ustmry.fd
 ")
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 62.
-
-
-LaTeX Warning: Reference `eq_1.3' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Reference `eq_1.4' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Reference `eq_1.6' on page 1 undefined on input line 62.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -1347,18 +1334,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
  []
 
 
-LaTeX Warning: Reference `eq_1.4' on page 1 undefined on input line 99.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
-
-
-LaTeX Warning: Reference `eq_1.3' on page 1 undefined on input line 105.
-
-
-LaTeX Warning: Reference `eq_dsdt' on page 1 undefined on input line 115.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
@@ -1374,12 +1352,6 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 132.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 132.
-
-LaTeX Warning: Reference `eq_1.6' on page 1 undefined on input line 134.
-
-
-LaTeX Warning: Reference `eq_1.6' on page 1 undefined on input line 138.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 134--139
 
@@ -1417,253 +1389,162 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-
-LaTeX Warning: Reference `eq_1.6' on page 2 undefined on input line 159.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
-
- []
-
-
-LaTeX Warning: Reference `fig_snell_empty' on page 2 undefined on input line 16
-5.
-
-
-LaTeX Warning: Reference `fig_snell_empty' on page 2 undefined on input line 16
-5.
-
-
-LaTeX Warning: Reference `fig_snell_empty' on page 2 undefined on input line 16
-5.
-
-<afbeeldingen/snell_diagram_leeg.jpg, id=17, 471.88058pt x 361.9573pt>
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 163.
+<afbeeldingen/snell_diagram_leeg.jpg, id=20, 471.88058pt x 361.9573pt>
 File: afbeeldingen/snell_diagram_leeg.jpg Graphic file (type jpg)
 <use afbeeldingen/snell_diagram_leeg.jpg>
 Package pdftex.def Info: afbeeldingen/snell_diagram_leeg.jpg  used on input lin
-e 169.
+e 168.
 (pdftex.def)             Requested size: 227.62204pt x 174.59912pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig_snell_full' on page 2 undefined on input line 174
-.
-
-<afbeeldingen/snell_diagram_vol.jpg, id=18, 471.88058pt x 361.35pt>
+<afbeeldingen/snell_diagram_vol.jpg, id=21, 471.88058pt x 361.35pt>
 File: afbeeldingen/snell_diagram_vol.jpg Graphic file (type jpg)
 <use afbeeldingen/snell_diagram_vol.jpg>
 Package pdftex.def Info: afbeeldingen/snell_diagram_vol.jpg  used on input line
- 178.
+ 177.
 (pdftex.def)             Requested size: 227.62204pt x 174.30617pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
-
-LaTeX Warning: Reference `eq_t' on page 3 undefined on input line 196.
-
-[3 <./afbeeldingen/snell_diagram_leeg.jpg> <./afbeeldingen/snell_diagram_vol.jp
-g>]
-
-LaTeX Warning: Reference `fig_snell_analytical' on page 4 undefined on input li
-ne 218.
-
+[3 <./afbeeldingen/snell_diagram_leeg.jpg>]
 <afbeeldingen/snell_analytical.jpg, id=25, 473.09521pt x 361.9573pt>
 File: afbeeldingen/snell_analytical.jpg Graphic file (type jpg)
 <use afbeeldingen/snell_analytical.jpg>
 Package pdftex.def Info: afbeeldingen/snell_analytical.jpg  used on input line 
-223.
-(pdftex.def)             Requested size: 273.14923pt x 208.9799pt.
+229.
+(pdftex.def)             Requested size: 136.57462pt x 104.48994pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 224.
+(Font)              scaled to size 9.0pt on input line 230.
 <afbeeldingen/ds.jpg, id=26, 245.3536pt x 225.31235pt>
 File: afbeeldingen/ds.jpg Graphic file (type jpg)
 <use afbeeldingen/ds.jpg>
-Package pdftex.def Info: afbeeldingen/ds.jpg  used on input line 229.
+Package pdftex.def Info: afbeeldingen/ds.jpg  used on input line 235.
 (pdftex.def)             Requested size: 91.04742pt x 83.60835pt.
-
-LaTeX Warning: Reference `eq_1.6' on page 4 undefined on input line 237.
-
-
-LaTeX Warning: Reference `fig_ds' on page 4 undefined on input line 247.
-
-
-LaTeX Warning: Reference `fig:mirage' on page 4 undefined on input line 268.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--270
+ [4 <./afbeeldingen/snell_diagram_vol.jpg> <./afbeeldingen/snell_analytical.jpg
+> <./afbeeldingen/ds.jpg>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 274--279
 
  []
 
-[4 <./afbeeldingen/snell_analytical.jpg> <./afbeeldingen/ds.jpg>]
-<afbeeldingen/miraaj.png, id=32, 685.05937pt x 533.74406pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--279
+
+ []
+
+<afbeeldingen/miraaj.png, id=35, 685.05937pt x 533.74406pt>
 File: afbeeldingen/miraaj.png Graphic file (type png)
 <use afbeeldingen/miraaj.png>
-Package pdftex.def Info: afbeeldingen/miraaj.png  used on input line 273.
+Package pdftex.def Info: afbeeldingen/miraaj.png  used on input line 282.
 (pdftex.def)             Requested size: 182.09486pt x 141.87314pt.
 
-
-LaTeX Warning: Reference `eq:temp' on page 5 undefined on input line 280.
-
-
-LaTeX Warning: Reference `eq:glad-dale' on page 5 undefined on input line 280.
-
-
-LaTeX Warning: Reference `eq:thermo_formula' on page 5 undefined on input line 
-280.
-
-
-LaTeX Warning: Reference `eq:pressure' on page 5 undefined on input line 280.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
-
- []
-
-[5 <./afbeeldingen/miraaj.png>]
-
-LaTeX Warning: Reference `eq:pressure' on page 6 undefined on input line 310.
-
-
-LaTeX Warning: Reference `eq:temp' on page 6 undefined on input line 310.
-
-
-LaTeX Warning: Reference `eq:pressure' on page 6 undefined on input line 310.
-
-
-LaTeX Warning: Reference `eq:thermo_formula' on page 6 undefined on input line 
-310.
-
-
-LaTeX Warning: Reference `eq:rho_for_z' on page 6 undefined on input line 310.
-
-
-LaTeX Warning: Reference `eq:n_for_z' on page 6 undefined on input line 310.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
+Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
 
 
-LaTeX Warning: Reference `eq:n_for_z' on page 6 undefined on input line 329.
+Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
+ []
 
-LaTeX Warning: Reference `eq_1.6' on page 6 undefined on input line 334.
-
-[6]
-
-LaTeX Warning: Reference `eq:magic_wolfram' on page 7 undefined on input line 3
-51.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--357
+[6 <./afbeeldingen/miraaj.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
 
 
-LaTeX Warning: Reference `fig:paths' on page 7 undefined on input line 358.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 336--341
 
  []
 
-<afbeeldingen/light path.png, id=45, 462.528pt x 346.896pt>
+[7]
+
+Package caption Warning: \label without proper reference on input line 378.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:paths' on page 8 undefined on input line 370.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--371
+
+ []
+
+<afbeeldingen/light path.png, id=49, 462.528pt x 346.896pt>
 File: afbeeldingen/light path.png Graphic file (type png)
 <use afbeeldingen/light path.png>
-Package pdftex.def Info: afbeeldingen/light path.png  used on input line 362.
+Package pdftex.def Info: afbeeldingen/light path.png  used on input line 374.
 (pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--368
+Underfull \hbox (badness 10000) in paragraph at lines 378--382
 
  []
 
 
-LaTeX Warning: Reference `eq_1.6' on page 7 undefined on input line 376.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
-
- []
-
-[7 <./afbeeldingen/light path.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 380--384
+Underfull \hbox (badness 10000) in paragraph at lines 378--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--384
+Underfull \hbox (badness 10000) in paragraph at lines 383--387
 
  []
 
 
-LaTeX Warning: Reference `fig_fibre_3d' on page 8 undefined on input line 385.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
-<afbeeldingen/fibre_3d.jpg, id=51, 409.32756pt x 184.62253pt>
+[8 <./afbeeldingen/light path.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 396--400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+<afbeeldingen/fibre_3d.jpg, id=54, 409.32756pt x 184.62253pt>
 File: afbeeldingen/fibre_3d.jpg Graphic file (type jpg)
 <use afbeeldingen/fibre_3d.jpg>
-Package pdftex.def Info: afbeeldingen/fibre_3d.jpg  used on input line 389.
+Package pdftex.def Info: afbeeldingen/fibre_3d.jpg  used on input line 405.
 (pdftex.def)             Requested size: 199.16928pt x 89.8348pt.
 
-LaTeX Warning: Reference `eq_snell' on page 8 undefined on input line 394.
-
-
-LaTeX Warning: Reference `fig_fibre_2d' on page 8 undefined on input line 397.
-
-
-LaTeX Warning: Reference `fig_fibre_2d' on page 8 undefined on input line 397.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 394--398
+Underfull \hbox (badness 10000) in paragraph at lines 410--414
 
  []
 
-<afbeeldingen/fibre_2d.jpg, id=52, 276.93378pt x 210.12958pt>
+<afbeeldingen/fibre_2d.jpg, id=55, 276.93378pt x 210.12958pt>
 File: afbeeldingen/fibre_2d.jpg Graphic file (type jpg)
 <use afbeeldingen/fibre_2d.jpg>
-Package pdftex.def Info: afbeeldingen/fibre_2d.jpg  used on input line 401.
+Package pdftex.def Info: afbeeldingen/fibre_2d.jpg  used on input line 417.
 (pdftex.def)             Requested size: 142.26378pt x 107.947pt.
-
-LaTeX Warning: Reference `eq_1.6' on page 8 undefined on input line 406.
-
-[8 <./afbeeldingen/fibre_3d.jpg> <./afbeeldingen/fibre_2d.jpg>]
-
-LaTeX Warning: Reference `eq_2.1' on page 9 undefined on input line 430.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--434
+[9 <./afbeeldingen/fibre_3d.jpg> <./afbeeldingen/fibre_2d.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 446--450
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--434
-
- []
-
-
-LaTeX Warning: Reference `fig_fibre_2d' on page 9 undefined on input line 437.
-
-
-LaTeX Warning: Reference `eq_2.1' on page 9 undefined on input line 437.
-
-[9] [10] (main.aux)
+[10] [11] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1672,10 +1553,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 20494 strings out of 480934
- 387334 string characters out of 2899917
- 629536 words of memory out of 3000000
- 35942 multiletter control sequences out of 15000+200000
+ 20497 strings out of 480934
+ 387429 string characters out of 2899917
+ 629780 words of memory out of 3000000
+ 35943 multiletter control sequences out of 15000+200000
  590209 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,77p,904b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1698,9 +1579,9 @@ nts/cm/cmr7.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/vanlo/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (10 pages, 1357135 bytes).
+Output written on main.pdf (11 pages, 1358047 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -63,7 +63,7 @@
 
 \begin{equation}
 	\label{eq_1.3}
-	L[x,y,z,\dot{X},\dot{y},\dot{z}] = n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
+	L[x,y,z,\dot{x},\dot{y},\dot{z}] = n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
 \end{equation}
 
 \begin{equation}
@@ -79,15 +79,15 @@
 \\
 First noting that $ds$ is a small element of distance travelled. Therefore taking into account the $x$, $y$ and $z$ direction, $ds$ is given by: \\
 
-\begin{equation}
+\begin{equation*}
 	ds = \sqrt{{dx}^2+{dy}^2+{dz}^2}
-\end{equation}
+\end{equation*}
 
 A small distance travelled in a trivial direction, lets say $dx$, can be approximated by as $dx = dt \cdot \dot{x}$. Therefore $ds$ can be rewritten as: \\
 
-\begin{equation}
+\begin{equation*}
 	ds = dt \sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
-\end{equation}
+\end{equation*}
 
 Rewriting gives:
 
@@ -98,35 +98,35 @@ Rewriting gives:
 
 If we combine the equations in equation \ref{eq_1.4} in vector notation we get: \\
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{dt} \dNabla L - \nabla L = 0
-\end{equation}
+\end{equation*}
 
 Rewriting and filling in equation \ref{eq_1.3} gives:
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{dt} \left[ \dNabla n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2} \right] = \Nabla \left[ n(x,y,z)\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2} \right]
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{dt}  \frac{n \cdot \dot{\vec{r}} }{\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}}   = \vec{\nabla} n \; \sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}
-\end{equation}
+\end{equation*}
 
 Using equation \ref{eq_dsdt} to to replace the $\sqrt{\dot{x}^2+\dot{y}^2+\dot{z}^2}$ and rewriting the $\dot{\vec{r}}$ vector gives the following: \\
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{dt} \frac{n \cdot \dot{\vec{r}}}{\frac{ds}{dt}}  = \vec{\nabla} n \: \frac{ds}{dt}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{dt}  \frac{n \cdot \frac{d}{dt} \vec{r}}{\frac{ds}{dt}}   =  \vec{\nabla} n \: \frac{ds}{dt}
-\end{equation}
+\end{equation*}
 
 Rewriting yields the equation that was to be proved: \\
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{ds} \left[ n \frac{d \vec{r}}{ds} \right] = \vec{\nabla} n
-\end{equation}
+\end{equation*}
 
 \section{Application}
 \subsection{Homogeneous medium}
@@ -137,19 +137,19 @@ Rewriting yields the equation that was to be proved: \\
 \\
 Equation \ref{eq_1.6} can be rewritten using the chain rule: \\
 
-\begin{equation}
+\begin{equation*}
 	\frac{d \vec{r}}{ds} \frac{d}{ds} n + n \frac{d^2 \vec{r}}{ds^2} = \Nabla n
-\end{equation} \\
+\end{equation*} \\
 
 Note that for a homogeneous medium, the index of refraction, $n$, is constant. Therefore $\frac{dn}{ds} = 0$, $\frac{\partial n}{\partial x} = 0$, $\frac{\partial n}{\partial y} = 0$ and $\frac{\partial n}{\partial z} = 0$. Using this in the previous equation yields: \\
 
-\begin{equation}
+\begin{equation*}
 	 n \frac{d^2 \vec{r}}{ds^2} = \vec{0}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	 \frac{d^2 \vec{r}}{ds^2} = \vec{0}
-\end{equation} \\
+\end{equation*} \\
 
 
 This implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity.\\
@@ -181,9 +181,9 @@ It is possible to calculate the fastest route between point A and B If we add th
 
 The time it takes to travel from point A to B, $t$, can easily be found dividing the path on the beach and the water, respectively $l_{beach}$ and $l_{water}$ by the corresponding speed:
 
-\begin{equation}
+\begin{equation*}
 	t = l_{beach}/v_1 + l_{water}/v_2
-\end{equation}
+\end{equation*}
 
 Using the pythagoras theorem we find:
 
@@ -194,9 +194,9 @@ Using the pythagoras theorem we find:
 
 If there is a fastest path, there should be an optimum value for $c$ for which $dt/dc = 0$. Therefore, applying the principle of Fermat to equation \ref{eq_t} leads to the following:
 
-\begin{equation}
+\begin{equation*}
 	0 = \frac{c}{v_1 \sqrt{a^2 + c^2}} + \frac{c-d}{v_2 \sqrt{b^2 + (d-c)^2}}
-\end{equation}
+\end{equation*}
 
 We now need the following trigonometric identity for right-angled triangles:
  
@@ -207,15 +207,15 @@ We now need the following trigonometric identity for right-angled triangles:
 
 Filling in this identity yields:
 
-\begin{equation}
+\begin{equation*}
 	0 =  sin(\theta _1)/v_1 - sin(\theta _2)/v_2
-\end{equation}
+\end{equation*}
 
 If we rewrite this and use the fact that the speed of light in a medium is given by $v = c/n$ we obtain Snell-Descartes law:
 
-\begin{equation}
+\begin{equation*}
 	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
-\end{equation}
+\end{equation*}
 
 This equation basically tells us, that for a interface to a higher refractive index, so where the light slows down, the light bends to the normal.
 
@@ -242,25 +242,25 @@ For the analytical derivation of Snell-Descartes law we will use a similar diagr
 
 If we write equation \ref{eq_1.6} for only the x-component and use the fact that $n$ is independent of $x$ in our diagram, we get the following:
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = 0
-\end{equation}
+\end{equation*}
 
 The $ds$ in the latter equation is defined as in figure \ref{fig_ds}. If we keep a fixed $ds$ for both media we obtain the following equality:
 
-\begin{equation}
+\begin{equation*}
 	\frac{d}{ds} \left[ n_1 \frac{d x_1}{ds} \right] = \frac{d}{ds} \left[ n_2 \frac{d x_2}{ds} \right]
-\end{equation}
+\end{equation*}
 
 Integrating both sides with respect to $ds$ and using the trigonometric identity from equation \ref{eq_sin_identity} yields the Snell-Descartes law:
 
-\begin{equation}
+\begin{equation*}
 	n_1 \frac{d x_1}{ds}=n_2 \frac{d x_2}{ds}
-\end{equation}
+\end{equation*}
 
 \begin{equation}
 	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
@@ -383,7 +383,7 @@ In the figure above an $\alpha$-value was used, this value was equal to the deri
 \textit{\underline{Question:} Forsee what could happen on the north pole when a warm wind is present.}\\
 \\
 \textit{\underline{Answer:}} \\
-On the North Pole with a warm wind blowing an inverse effect as described before would be seen, since the ground is cold and the air heats up as the height increases. The index of refraction $n$ would then decrease the higher off the ground. Light would then bend downward instead of up allowing you to see the ground when you look at the sky.
+On the North Pole with a warm wind blowing an inverse effect as described before would be seen, since the ground is cold and the air heats up as the height increases. The index of refraction $n$ would then decrease the higher off the ground. Light would then bend downward instead of up. If we assume the temperature gradient, and therefore the refractive index gradient, is constant in the direction parallel to the ground, there are two things likely to happen. (1) Since the path of the light has its curvature in the same direction as the curvature of the earth allowing, the light bends around the curvature of the earth and objects that are beyond the horizon can be seen. (2) When looking up, the downward bending of the light shows objects that are actually on the ground. This results in objects that seem to fly.\\
 
 \subsection{Optical fibre}
 
@@ -443,7 +443,7 @@ With $a$ an arbitrary constant. From  equation \ref{eq_sin_identity} it follows 
 
 \subsubsection{}
 
-\textit{\underline{Question:} Solve equation \ref{eq_2.1} for $n(r) = n_0 \sqrt{1 - \alpha ^2 r^2}$ with $\alpha < 1/r$ a constant and $r$ the radius of the fibre.You should end up with an analytical function.}\\
+\textit{\underline{Question:} Solve equation \ref{eq_2.1} for $n(r) = n_0 \sqrt{1 - \alpha ^2 r^2}$ with $\alpha < 1/R$, a constant, $R$ the radius of the fibre and $r$ the distance to the $\vartheta _x$-axis. You should end up with an analytical function.}\\
 \\
 \textit{\underline{Answer:}} \\
 From figure \ref{fig_fibre_2d} and equation \ref{eq_sin_identity} it follows that $ sin(i) = dx/ds$. Using this and the Pythagoras theorem in equation \ref{eq_2.1} yields:
@@ -531,25 +531,51 @@ Inverting the substitution and doing some rewriting yields the following equatio
 \end{equation*}
 
 \begin{equation*}
-	\sin \left( \frac{n_0 \; \alpha \; x}{a} \right) =  \frac{r n_0 \alpha}{\sqrt{n_0^2-a^2}}
+	\sin \left( \frac{n_0 \; \alpha \; x}{a} \right) =  \frac{r \; n_0 \; \alpha}{\sqrt{n_0^2-a^2}}
 \end{equation*}
 
 \begin{equation*}
-	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a} \right) 
+	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \; \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a} \right) 
 \end{equation*}
 
 Since there are no discontinuities in $n(r)$ and $dn(r)/dr$, we would expect that there are also no discontinuities in $r(x)$ and $dr(x)/dx$. Since $r = \mid y \mid$ for the light beam in the $\vartheta _{x,y}$ plane. The only possible solution of $y(x)$ is the following:
 
 \begin{equation}
-	y(x) = \pm \frac{\sqrt{n_0^2-a^2}}{n_0 \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a}\right) 
+	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \;\alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a}\right) 
+	\label{eq_fibre_path}
 \end{equation}
 
-\textit{\underline{Plot:} a numerical solution of the problem.}
+If we now consider that that the angle of the light beam at $x=0$ , $\theta _i$, is determined. We must consider the derivative of the latter equation:
+
+\begin{equation*}
+	\frac{d \; y(x)}{dx} =  \frac{n_0 \; \alpha}{a} \frac{\sqrt{n_0^2-a^2} }{n_0 \alpha} \cos \left( \frac{n_0 \; \alpha \; x}{a}\right) 
+\end{equation*}
+
+For $x=0$: 
+
+\begin{equation*}
+	\frac{d \; y(x)}{dx} =  \sqrt{n_0^2-a^2}
+\end{equation*}
+
+Given the trigonometric identity $tan (\theta) = (opposite-side)/(adjacent-side)$. It follows that:
+
+\begin{equation*}
+	\frac{dy}{dx} =  \sqrt{n_0^2-a^2} = tan (\theta _i)
+\end{equation*}
+
+If we now consider $n_0$ to be constant for the given fibre and $a$ dependent on $\theta _i$, the initial angle can be integrated in equation \ref{eq_fibre_path}.
+
+\begin{equation}
+	a ^2 = n_0 ^2 - tan ^2 (\theta _i)
+\end{equation}
+
+\textit{\underline{Question:} Plot a numerical solution of the problem.}\\
+\\
+\textit{\underline{Answer:}} \\
 To plot a numerical solution we use equation \ref{eq:drdx} and rewrite it to get a fraction $dr/dx$. We will then plot this function using the python script below. There is one problem however, since we used equation  \ref{eq:drdx} we can only get the part of the solution where $(dr/dx)^2$ was positive.\\
 
 \lstinputlisting[language=Python]{../../python/plot_fiber.py}
-
-Using this code the folowing plot for the numerical solution was made \ref{fig:numersolut}. Where the horizontal and vertical axis are normalised to $R$, the radius of the fiber.\\
+Figure \ref{fig:numersolut} shows a plot of the numerical solution using the python code above. The horizontal and vertical axis are normalised to $R$, the radius of the fibre.\\
 
 \begin{figure}[h!]
 	\centering
@@ -557,8 +583,9 @@ Using this code the folowing plot for the numerical solution was made \ref{fig:n
 	\caption{The numerical solution}
 	\label{fig:numersolut}
 \end{figure}
-
-\textit{\underline{Compare:} the numerical solution of the problem with an analytical one.}
+\textit{\underline{Question:} Compare the numerical solution of the problem with an analytical one.}\\
+\\
+\textit{\underline{Answer:}} \\
 The above Python code was also used to plot the analytical solution. Both are show in figure \ref{fig:bothsolutions}. As can be seen in the figure the numerical solution approximates the analytical solution pretty well, up to the point where the derivative becomes negative.\\
 
 \begin{figure}[h!]
@@ -567,8 +594,19 @@ The above Python code was also used to plot the analytical solution. Both are sh
 	\caption{The analytical and numerical solution}
 	\label{fig:bothsolutions}
 \end{figure}
+\textit{\underline{Question:} Explain: What is the advantage of such a fibre?}\\
+\\
+\textit{\underline{Answer:}} \\
+Consider a straight piece of cylindrical fibre with a constant refractive index and a length $l$ (see figure \ref{fig_fibre_path} for a schematic diagram). A light beam that gets send in the fibre parallel to the axis of the fibre will not reflect and follow the shortest route with length $l$ to the other end of the fibre. If a beam of light is enters the fibre with an angle $\theta _i$ to the axis, the beam will reflect at the outer surface and the path the light will travel to the end of the fibre will be of length $l / cos( \theta _0 )$. \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{afbeeldingen/fibre_2d_path.jpg}
+	\caption{2-dimensional diagram of an optical fibre with possible light paths. The straight line with the dots and dashes corresponds to an optical path parallel to the axis of a fibre with a constant refractive index. The dashed line corresponds to the optical path for a beam entering with an angle $\theta _i$ for a fibre with constant refractive index. The solid line corresponds to the optical path for a beam entering with an angle $\theta _i$ for a fibre with a refractive index gradient given by $n(r) = n_0 \sqrt{1 - \alpha ^2 r^2}$.}
+	\label{fig_fibre_path}
+\end{figure}
+Since the speed of light is finite, this difference in path length causes a delay for light rays that enter the fibre in different angles. Since it is difficult or even impossible to get a fully coherent light signal, this causes a signal that is transmitted in the fibre to spread over a larger time interval. This time-spread of signals is disadvantageous if someone would want to send as much information through the fibre as possible. \\
+The given refractive index will give a light path as in equation \ref{eq_fibre_path}. Considering the shape of this sine in comparison to the situation with constant refractive index, this sine-shaped path is much shorter. Therefore the time-spread of signals is shorter for the situation with the refractive index gradient. This allows you to send more information through the fibre in a time unit.
 
-\textit{\underline{Explain:} what is the advantage of such a fiber?}
-When using a alpha-peak profile for the refractive index of the fiber it is possible to use more modes of light more efficiently since for a certain shape factor $\alpha$ the multimode distortion for this profile is the smallest possible. When more modes of light can be used the cable has a higher bandwidth.
+
 
 \end{document}

@@ -151,8 +151,28 @@ Note that for a homogeneous medium, the index of refraction, $n$, is constant. T
 	 \frac{d^2 \vec{r}}{ds^2} = \vec{0}
 \end{equation*} \\
 
+Using the definition of $ds$ (equation \ref{eq_dsdt}) in the latter equation yields:
 
-This implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity.\\
+\begin{align*}
+	 \frac{d^2 \vec{r}}{dt^2 (\dot{x}^2+\dot{y}^2+\dot{z}^2)} = \vec{0} \\
+	 \frac{d^2 \vec{r}}{dt^2} = \vec{0} \\ 
+\end{align*} \\
+
+Integrating both sides of the equation with respect to $t$ twice gives us the equation for $\vec{r}(t)$ which describes the uniquely the path of the light as a function of time:
+
+\begin{align*}
+	 \frac{d \vec{r}}{dt} = A \\
+	 \vec{r} = A \: t + B
+\end{align*} \\
+
+We assume that at a time $t=0$, when we start to study a beam of light in the homogeneous medium, the initial position and velocity of the beam are $\vec{r}(0) = B = \vec{r}_0$ and  $ \dot{\vec{r}}(0) = A  \dot{\vec{r}}_0$ respectively. Therefore we find:
+
+\begin{align*}
+	 \vec{r} = \dot{\vec{r}}_0 \: t + \vec{r}_0
+\end{align*} \\
+
+
+This is a linear function of time and implies that the direction and velocity of the light is not changed as the light travels through the medium. Therefore, it travels in a straight line with a constant velocity.\\
 
 \newpage
 \subsection{Snell-Descartes Law}
@@ -165,59 +185,52 @@ The speed of light in a medium is inversely proportional to the refractive index
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=8cm]{afbeeldingen/snell_diagram_leeg.jpg}
+	\includegraphics[width=6cm]{afbeeldingen/snell_diagram_leeg.jpg}
 	\caption{Diagram of a 2-dimensional beach analogy of the interface between two media with different index of refraction. The upper-half corresponds to the beach and the lower-half to the sea. The dashed line corresponds to the direct route between point A and B with the shortest distance. The solid line corresponds to a route that is intuitively faster than the direct route.}
 	\label{fig_snell_empty}
 \end{figure}
 
-It is possible to calculate the fastest route between point A and B If we add the parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$ which corresponds respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in figure \ref{fig_snell_full}.
+To find the angle of refraction at the interface of two media we consider two parallel beams of coherent light that reach an interface, oriented in the x,z-plane, such as in figure \ref{fig_snell_geom_empty}. The two beams propagate in the x,y-plane and have an incident angle of $\theta_1$, the distance between the rays is $\Delta x$ in the x-direction and the refracted angle of the two beams is $\theta _2$. The latter angle is equal for both beams of light, since the two media have a constant refractive index. \\
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=8cm]{afbeeldingen/snell_diagram_vol.jpg}
-	\caption{Diagram of beach analogy with parameters $v_1$, $v_2$, $\theta _1$, $\theta _2$, $a$, $b$, $c$ and $d$. These correspond respectively to the propagation speed on the beach, the propagation speed in the water, the angle of the path on the beach with the normal, the angle of the path in the water with the normal and distances which can be seen in the diagram.}
-	\label{fig_snell_full}
+	\includegraphics[width=0.4\textwidth]{afbeeldingen/snell_geom_empty.jpg}
+	\caption{Diagram of two parallel beams of coherent light reaches an interface  with an angle between two media with different refractive indices, $n_1$ and $n_2$. The beams have an incident angle $ \theta_1$ and refracted angle $\theta_2$. $\Delta x$ corresponds to the distance between the beams in the x direction. }
+	\label{fig_snell_geom_empty}
 \end{figure}
 
-The time it takes to travel from point A to B, $t$, can easily be found dividing the path on the beach and the water, respectively $l_{beach}$ and $l_{water}$ by the corresponding speed:
+Because of the refraction at the interface, the two beams will get a phase difference, $\Delta \phi$. This is caused by different path length in the two media for two parallel beams. The phase change of light is given by the product of the passed time, $\Delta t$, and the angular frequency, $\omega$. Therefore, $\Delta \phi$ is given by:
 
-\begin{equation*}
-	t = l_{beach}/v_1 + l_{water}/v_2
-\end{equation*}
+\begin{align*}
+	\Delta \phi &= \omega \Delta t_2 - \omega \Delta t_1 \\
+	\frac{\Delta \phi}{\omega} &= \Delta t_2 - \Delta t_1
+\end{align*}
 
-Using the pythagoras theorem we find:
+With $\Delta t_1$ and $\Delta t_2$, the passed time between the two dotted lines in figure \ref{fig_snell_geom_empty}. 
+We can calculate $\Delta t_1$ and $\Delta t_2$ using the speed of the light in the media, $v = c/n$, and the difference in path length in both media, $\Delta L_1$ and $\Delta L_2$ (see figure \ref{fig_snell_geom} for clarification of the used parameters). $\Delta L$ can be calculated using trigonometric identities with the corresponding angles:
 
-\begin{equation}
-	t = \sqrt{a^2 + c^2}/v_1 + \sqrt{b^2 + (d-c)^2}/v_2
-	\label{eq_t}
-\end{equation}
+\begin{align*}
+	\frac{\Delta \phi}{\omega} &= \Delta t_2 - \Delta t_1 \\
+	&= \frac{\Delta L_2}{v_2} - \frac{\Delta L_1}{v_1} \\
+	&= \frac{n_2 \Delta L_2}{c} - \frac{n_1 \Delta L_1}{c} \\
+	&= \frac{n_2 [sin(\theta_2) \Delta x]}{c} - \frac{n_1 [sin(\theta_1) \Delta x]}{c} \\
+	\frac{c \: \Delta \phi}{\omega} &= \Delta x \big( n_2 \: sin(\theta_2) - n_1 \: sin(\theta_1) \big)  \\
+\end{align*}
 
-If there is a fastest path, there should be an optimum value for $c$ for which $dt/dc = 0$. Therefore, applying the principle of Fermat to equation \ref{eq_t} leads to the following:
+If we now let $\Delta x \rightarrow 0$, the phase difference should go to zero since the two paths will almost coincide. Therefore we get:
 
-\begin{equation*}
-	0 = \frac{c}{v_1 \sqrt{a^2 + c^2}} + \frac{c-d}{v_2 \sqrt{b^2 + (d-c)^2}}
-\end{equation*}
+\begin{align*}
+	\frac{c \: \Delta \phi}{\omega} = 0 &= \Delta x \big( n \: sin(\theta_2) - n \: sin(\theta_1) \big)  \\
+	&= n_2 \: sin(\theta_2) - n_1 \: sin(\theta_1)
+	 n_2 \: sin(\theta_2) &= n_1 \: sin(\theta_1)
+\end{align*}
 
-We now need the following trigonometric identity for right-angled triangles:
- 
-\begin{equation}
-	sin(\theta) = (adjacent-side)/(diagonal-side) 
-	\label{eq_sin_identity}
-\end{equation}
-
-Filling in this identity yields:
-
-\begin{equation*}
-	0 =  sin(\theta _1)/v_1 - sin(\theta _2)/v_2
-\end{equation*}
-
-If we rewrite this and use the fact that the speed of light in a medium is given by $v = c/n$ we obtain Snell-Descartes law:
-
-\begin{equation*}
-	n_1 \; sin(\theta _1) = n_2 \; sin(\theta _2)
-\end{equation*}
-
-This equation basically tells us, that for a interface to a higher refractive index, so where the light slows down, the light bends towards the normal.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\textwidth]{afbeeldingen/snell_geom.jpg}
+	\caption{Diagram like in figure \ref{fig_snell_geom_empty} with extra parameters $\Delta L_1$ and $\Delta L_2$ corresponding to the path difference in the different media by the two beams of light.}
+	\label{fig_snell_geom}
+\end{figure}
 
 \subsubsection{Analytical}
 
@@ -416,16 +429,18 @@ Since we know that the beam will stay in the $\vartheta _{x,y}$ plane, the probl
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width = 5cm]{afbeeldingen/fibre_2d.jpg}
+	\includegraphics[width = 4cm]{afbeeldingen/fibre_2d.jpg}
 	\caption{2-dimensional fibre including the relation between $ds$, $ds$, $dy$, $dx$ and $i$.}
 	\label{fig_fibre_2d}
 \end{figure}
 
-We can write equtaion \ref{eq_1.6} for only the x-component and use that $n$ is independent of $x$:
+We can write equtaion \ref{eq_1.6} for only the x-component:
 
 \begin{equation}
 	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx}
 \end{equation}
+
+If we now use that $n$ is independent of $x$, and therefore $\frac{d n}{dx} = 0$, we find:
 
 \begin{equation}
 	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = 0

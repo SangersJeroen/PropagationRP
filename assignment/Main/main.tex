@@ -199,7 +199,7 @@ To find the angle of refraction at the interface of two media we consider two pa
 	\label{fig_snell_geom_empty}
 \end{figure}
 
-Because of the refraction at the interface, the two beams will get a phase difference, $\Delta \phi$. This is caused by different path length in the two media for two parallel beams. The phase change of light is given by the product of the passed time, $\Delta t$, and the angular frequency, $\omega$. Therefore, $\Delta \phi$ is given by:
+The phase change between two beams of light is given by the product of the passed time, $\Delta t$, and the angular frequency, $\omega$. Therefore, $\Delta \phi$ is given by:
 
 \begin{align*}
 	\Delta \phi &= \omega \Delta t_2 - \omega \Delta t_1 \\
@@ -214,16 +214,16 @@ We can calculate $\Delta t_1$ and $\Delta t_2$ using the speed of the light in t
 	&= \frac{\Delta L_2}{v_2} - \frac{\Delta L_1}{v_1} \\
 	&= \frac{n_2 \Delta L_2}{c} - \frac{n_1 \Delta L_1}{c} \\
 	&= \frac{n_2 [sin(\theta_2) \Delta x]}{c} - \frac{n_1 [sin(\theta_1) \Delta x]}{c} \\
-	\frac{c \: \Delta \phi}{\omega} &= \Delta x \big( n_2 \: sin(\theta_2) - n_1 \: sin(\theta_1) \big)  \\
+	\frac{c \: \Delta \phi}{\omega \Delta x} &=  n_2 \: sin(\theta_2) - n_1 \: sin(\theta_1)   \\
 \end{align*}
 
-If we now let $\Delta x \rightarrow 0$, the phase difference should go to zero since the two paths will almost coincide. Therefore we get:
+Since we don't expect any discontinuity in phase by the refraction, the light beams in the second medium should also be in phase, just as the coherent light beams in medium 1. This is denoted by the dashed lines in the figures. This implies that $\Delta \phi = 0$ in the latter equation and leads to Snell-Descartes law:
 
 \begin{align*}
-	\frac{c \: \Delta \phi}{\omega} = 0 &= \Delta x \big( n \: sin(\theta_2) - n \: sin(\theta_1) \big)  \\
-	&= n_2 \: sin(\theta_2) - n_1 \: sin(\theta_1)
+	\frac{c \: \Delta \phi}{\omega} = 0 &=  n \: sin(\theta_2) - n \: sin(\theta_1) \\
 	 n_2 \: sin(\theta_2) &= n_1 \: sin(\theta_1)
 \end{align*}
+
 
 \begin{figure}[h!]
 	\centering
@@ -232,6 +232,8 @@ If we now let $\Delta x \rightarrow 0$, the phase difference should go to zero s
 	\label{fig_snell_geom}
 \end{figure}
 
+ \newpage
+ 
 \subsubsection{Analytical}
 
 For the analytical derivation of Snell-Descartes law we will use a similar diagram as in the geometrical derivation with a coordinate system added as in figure \ref{fig_snell_analytical}.
@@ -434,16 +436,10 @@ Since we know that the beam will stay in the $\vartheta _{x,y}$ plane, the probl
 	\label{fig_fibre_2d}
 \end{figure}
 
-We can write equtaion \ref{eq_1.6} for only the x-component:
+We can write equtaion \ref{eq_1.6} for only the x-component and use that $n$ is independent of $x$, and therefore $\frac{d n}{dx} = 0$:
 
 \begin{equation}
-	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx}
-\end{equation}
-
-If we now use that $n$ is independent of $x$, and therefore $\frac{d n}{dx} = 0$, we find:
-
-\begin{equation}
-	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = 0
+	\frac{d}{ds} \left[ n \frac{d x}{ds} \right] = \frac{d n}{dx} = 0
 \end{equation}
 
 If we now integrate with respect to $ds$ on both sides we get the following:

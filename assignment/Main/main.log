@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  6 MAY 2020 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.13)  7 MAY 2020 15:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -1440,60 +1440,57 @@ File: afbeeldingen/snell_geom.jpg Graphic file (type jpg)
 <use afbeeldingen/snell_geom.jpg>
 Package pdftex.def Info: afbeeldingen/snell_geom.jpg  used on input line 230.
 (pdftex.def)             Requested size: 182.09486pt x 122.05339pt.
-<afbeeldingen/snell_analytical.jpg, id=26, 473.09521pt x 361.9573pt>
+ [4 <./afbeeldingen/snell_geom.jpg>]
+<afbeeldingen/snell_analytical.jpg, id=29, 473.09521pt x 361.9573pt>
 File: afbeeldingen/snell_analytical.jpg Graphic file (type jpg)
 <use afbeeldingen/snell_analytical.jpg>
 Package pdftex.def Info: afbeeldingen/snell_analytical.jpg  used on input line 
-242.
+244.
 (pdftex.def)             Requested size: 136.57462pt x 104.48994pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 243.
-<afbeeldingen/ds.jpg, id=27, 245.3536pt x 225.31235pt>
+(Font)              scaled to size 9.0pt on input line 245.
+<afbeeldingen/ds.jpg, id=30, 245.3536pt x 225.31235pt>
 File: afbeeldingen/ds.jpg Graphic file (type jpg)
 <use afbeeldingen/ds.jpg>
-Package pdftex.def Info: afbeeldingen/ds.jpg  used on input line 248.
+Package pdftex.def Info: afbeeldingen/ds.jpg  used on input line 250.
 (pdftex.def)             Requested size: 91.04742pt x 83.60835pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./afbeeldingen/snell_geom.jpg>]
-
 LaTeX Warning: Reference `eq_sin_identity' on page 5 undefined on input line 27
-2.
+4.
 
 [5 <./afbeeldingen/snell_analytical.jpg> <./afbeeldingen/ds.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 287--292
+Underfull \hbox (badness 10000) in paragraph at lines 289--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--292
+Underfull \hbox (badness 10000) in paragraph at lines 289--294
 
  []
 
 <afbeeldingen/miraaj.png, id=36, 685.05937pt x 533.74406pt>
 File: afbeeldingen/miraaj.png Graphic file (type png)
 <use afbeeldingen/miraaj.png>
-Package pdftex.def Info: afbeeldingen/miraaj.png  used on input line 295.
+Package pdftex.def Info: afbeeldingen/miraaj.png  used on input line 297.
 (pdftex.def)             Requested size: 182.09486pt x 141.87314pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--303
+Underfull \hbox (badness 10000) in paragraph at lines 301--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--303
+Underfull \hbox (badness 10000) in paragraph at lines 301--305
 
  []
 
 [6 <./afbeeldingen/miraaj.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 332--334
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--355
+Underfull \hbox (badness 10000) in paragraph at lines 352--357
 
  []
 
@@ -1503,109 +1500,109 @@ Package caption Warning: \label without proper reference on input line 391.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:paths' on page 8 undefined on input line 386.
+LaTeX Warning: Reference `fig:paths' on page 8 undefined on input line 388.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--387
+Underfull \hbox (badness 10000) in paragraph at lines 385--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--387
+Underfull \hbox (badness 10000) in paragraph at lines 385--389
 
  []
 
 <afbeeldingen/light path.png, id=50, 462.528pt x 346.896pt>
 File: afbeeldingen/light path.png Graphic file (type png)
 <use afbeeldingen/light path.png>
-Package pdftex.def Info: afbeeldingen/light path.png  used on input line 390.
+Package pdftex.def Info: afbeeldingen/light path.png  used on input line 392.
 (pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--402
+Underfull \hbox (badness 10000) in paragraph at lines 400--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--402
+Underfull \hbox (badness 10000) in paragraph at lines 400--404
 
  []
 
 [8 <./afbeeldingen/light path.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--415
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--415
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
 
  []
 
 <afbeeldingen/fibre_3d.jpg, id=55, 409.32756pt x 184.62253pt>
 File: afbeeldingen/fibre_3d.jpg Graphic file (type jpg)
 <use afbeeldingen/fibre_3d.jpg>
-Package pdftex.def Info: afbeeldingen/fibre_3d.jpg  used on input line 420.
+Package pdftex.def Info: afbeeldingen/fibre_3d.jpg  used on input line 422.
 (pdftex.def)             Requested size: 199.16928pt x 89.8348pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--428
+Underfull \hbox (badness 10000) in paragraph at lines 426--430
 
  []
 
 <afbeeldingen/fibre_2d.jpg, id=56, 276.93378pt x 210.12958pt>
 File: afbeeldingen/fibre_2d.jpg Graphic file (type jpg)
 <use afbeeldingen/fibre_2d.jpg>
-Package pdftex.def Info: afbeeldingen/fibre_2d.jpg  used on input line 432.
+Package pdftex.def Info: afbeeldingen/fibre_2d.jpg  used on input line 434.
 (pdftex.def)             Requested size: 113.81102pt x 86.35567pt.
 [9 <./afbeeldingen/fibre_3d.jpg> <./afbeeldingen/fibre_2d.jpg>]
 
 LaTeX Warning: Reference `eq_sin_identity' on page 10 undefined on input line 4
-55.
+51.
 
 
 LaTeX Warning: Reference `eq_sin_identity' on page 10 undefined on input line 4
-66.
+62.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--467
+Underfull \hbox (badness 10000) in paragraph at lines 459--463
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 589--593
+Underfull \hbox (badness 10000) in paragraph at lines 585--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--593
+Underfull \hbox (badness 10000) in paragraph at lines 585--589
 
  []
 
-[11]
+
 ("C:\Users\vanlo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
 sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-94.
+90.
 
 ("C:\Users\vanlo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1613,14 +1610,14 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 (../../python/plot_fiber.py
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
-
+ [11]
 Overfull \hbox (67.5333pt too wide) in paragraph at lines 33--35
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][] 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
@@ -1628,18 +1625,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 595--596
 File: afbeeldingen/numerical_solution.png Graphic file (type png)
 <use afbeeldingen/numerical_solution.png>
 Package pdftex.def Info: afbeeldingen/numerical_solution.png  used on input lin
-e 599.
+e 595.
 (pdftex.def)             Requested size: 250.38564pt x 187.79213pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 603--607
+Underfull \hbox (badness 10000) in paragraph at lines 599--603
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 603--607
+Underfull \hbox (badness 10000) in paragraph at lines 599--603
 
  []
 
@@ -1647,7 +1644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 603--607
 File: afbeeldingen/numerical_and_analytical.png Graphic file (type png)
 <use afbeeldingen/numerical_and_analytical.png>
 Package pdftex.def Info: afbeeldingen/numerical_and_analytical.png  used on inp
-ut line 610.
+ut line 606.
 (pdftex.def)             Requested size: 250.38564pt x 187.79213pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1655,11 +1652,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <afbeeldingen/fibre_2d_path.jpg, id=68, 398.39597pt x 218.63193pt>
 File: afbeeldingen/fibre_2d_path.jpg Graphic file (type jpg)
 <use afbeeldingen/fibre_2d_path.jpg>
-Package pdftex.def Info: afbeeldingen/fibre_2d_path.jpg  used on input line 620
+Package pdftex.def Info: afbeeldingen/fibre_2d_path.jpg  used on input line 616
 .
 (pdftex.def)             Requested size: 318.66948pt x 174.88576pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--626
+Underfull \hbox (badness 10000) in paragraph at lines 610--622
 
  []
 
@@ -1679,11 +1676,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  21009 strings out of 480934
  393317 string characters out of 2899917
- 825346 words of memory out of 3000000
+ 825356 words of memory out of 3000000
  36436 multiletter control sequences out of 15000+200000
  590837 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,12n,77p,904b,1397s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 76i,12n,77p,904b,1896s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vanlo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 ectt1000.pk> <C:\Users\vanlo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
 ec/dpi600\ecit1000.pk>{C:/Users/vanlo/AppData/Local/Programs/MiKTeX 2.9/fonts/e
@@ -1705,7 +1702,7 @@ s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vanlo/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vanlo/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/vanlo/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (14 pages, 1491358 bytes).
+Output written on main.pdf (14 pages, 1490796 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

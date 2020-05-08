@@ -289,35 +289,61 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Italic-tlf-t1.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd
 INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary10.tfm
-INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary7.tfm
-INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary5.tfm
+INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary8.tfm
+INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary6.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Italic-tlf-t1.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary10.tfm
+INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary7.tfm
+INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary5.tfm
 OUTPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.pdf
+INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Roman-tlf-t1.vf
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1--base.tfm
+INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Roman-tlf-t1.vf
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1--base.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Bold-tlf-t1.vf
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1--base.tfm
-INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Italic-tlf-t1.vf
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Italic-tlf-t1--base.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Roman-tlf-t1.vf
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1--base.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\public\xcharter\XCharter-Bold-tlf-t1.vf
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1--base.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Bold-tlf-t1.tfm
@@ -345,19 +371,12 @@ INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\sn
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\snell_analytical.jpg
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\xcharter\XCharter-Roman-tlf-t1.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary9.tfm
-INPUT C:\Users\Gebruiker\AppData\Local\MiKTeX\2.9\fonts\tfm\public\stmaryrd\stmary6.tfm
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\ds.jpg
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\ds.jpg
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\ds.jpg
@@ -409,6 +428,8 @@ INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\fi
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\fibre_2d_path.jpg
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\fibre_2d_path.jpg
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\afbeeldingen\fibre_2d_path.jpg
+INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.bbl
+INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.bbl
 INPUT c:\Users\Gebruiker\Documents\PropagationRP\assignment\Main\main.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\cm-super\cm-super-t1.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\xcharter\xch_uy5hgr.enc

@@ -57,6 +57,11 @@
 
 \begin{document}
 
+\title{Propagation of Light}
+\author{R van Loon, J Sangers}
+\date{Today}
+\maketitle
+
 \section{Principle of Fermat}
 
 \textit{\underline{Question:} Proof that equation \ref{eq_1.3} and \ref{eq_1.4} can be reduced to equation \ref{eq_1.6}.} \\
@@ -301,7 +306,7 @@ Since the index of refraction of the air varies with the temperature and the tem
 \textit{\underline{Question:} Find the relation between the index of refraction with the altitude if we assume that the gradient of the temperature changes linearily with the altituder.}\\
 \\
 \textit{\underline{Answer:}} \\
-In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$ and pressure $P(z)$, the Edl\'en equation is used this equation is outlined in \cite{birch_downs}. In equation \ref{eq:edlen} this relation is shown. Finding the relation for the pressure at height $P(z)$ is unnecessary as the pressure is assumed constant, the $(n-1)_S$ term is shown in \ref{eq:edlenS} here $\sigma$ is the wavelegth of the light. The result of combining all three equations results in a usable relation between the index of refraction $n$ and the height above the ground $z$. This is shown in equation \ref{eq:bigboii}.\\
+In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$ and pressure $P(z)$, the Edl\'en equation is used this equation is outlined in \cite{Birch_1993}. In equation \ref{eq:edlen} this relation is shown. Finding the relation for the pressure at height $P(z)$ is unnecessary as the pressure is assumed constant, the $(n-1)_S$ term is shown in \ref{eq:edlenS} here $\sigma$ is the wavelegth of the light. The result of combining all three equations results in a usable relation between the index of refraction $n$ and the height above the ground $z$. This is shown in equation \ref{eq:bigboii}.\\
 
 \begin{equation}
 	T(z) = T_0 - c \cdot z
@@ -595,6 +600,7 @@ Consider a straight piece of cylindrical fibre with a constant refractive index 
 Since the speed of light is finite, this difference in path length causes a delay for light rays that enter the fibre in different angles. Since it is difficult or even impossible to get a fully coherent light signal, this causes a signal that is transmitted in the fibre to spread over a larger time interval. This time-spread of signals is disadvantageous if someone would want to send as much information through the fibre as possible. \\
 The given refractive index will give a light path as in equation \ref{eq_fibre_path}. Considering the shape of this sine in comparison to the situation with constant refractive index, this sine-shaped path is much shorter. Therefore the time-spread of signals is shorter for the situation with the refractive index gradient. This allows you to send more information through the fibre in a time unit.
 
-
+\bibliography{main}{}
+\bibliographystyle{plain}
 
 \end{document}

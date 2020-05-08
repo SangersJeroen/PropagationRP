@@ -13,15 +13,22 @@ mpb.rcParams.update({
 
 
 #Defining a few constants
-n0 = 1.0002512365013845
-alpha = -7.77e-7
-theta = 30
-c = np.sin(np.pi/180*theta)
-x = np.linspace(-600,1500,10000)
+n0 = 1.00022929
+n1 = 1.000271621
+alpha = -(n1-n0)/3
+theta = 179
+c = 100
+d = 10
+x = np.linspace(-d,100,100)
+x_ = np.linspace(-d,100,100)+d
 k = 0
 
+print(alpha)
+
 def z(x,k,c,alpha):
-    return c**2 *(-np.exp(alpha*x/c + alpha*k) -np.exp(-alpha*x/c -alpha*k) + 2*n0)/(2*alpha)
+    out =  c**2 *(-np.exp((alpha*(x-d) + alpha*k)/c) -np.exp((-alpha*(x-d) -alpha*k)/c) + 2*n0)/(2*alpha)
+    out = out - out[0]+1.80
+    return out
 
 def dzdx(array):
     dzdx = np.asarray([])
@@ -29,16 +36,18 @@ def dzdx(array):
         dzdx = np.append(dzdx, (array[j+1]-array[j])/(x[j+1]-x[j]))
     return np.arcsin(dzdx)*180/np.pi
 
-""" for i in np.linspace(alpha,10*alpha,5):
+for i in np.linspace(alpha,5*alpha,5):
     zx = z(x,k,c,i)
     angle = dzdx(zx)
-    plt.plot(x, zx, label=r"$\alpha = {:.2E}$".format(-i))
+    plt.plot(x_, zx, label=r"$\alpha = {:.2E}$".format(-i))
     #plt.plot(x[1:-1], angle, label="Angle") """
 
+plt.ylim([1,3])
 """ plt.subplot(121) """
-plt.plot(x,z(x,k,c,alpha), label="Optical path")
+#plt.plot(x_,z(x,k,c,alpha), label="Optical path")
 plt.xlabel(r"distance $x$ [$m$]")
 plt.ylabel(r"height $z$ [$m$]")
+plt.legend()
 
 """ plt.subplot(122)
 plt.plot(x[1:-1],dzdx(z(x,k,c,alpha)), label="Angle with horizontal")

@@ -155,7 +155,7 @@ Using the definition of $ds$ (equation \ref{eq_dsdt}) in the latter equation yie
 
 \begin{align*}
 	 \frac{d^2 \vec{r}}{dt^2 (\dot{x}^2+\dot{y}^2+\dot{z}^2)} = \vec{0} \\
-	 \frac{d^2 \vec{r}}{dt^2} = \vec{0} \\ 
+	 \frac{d^2 \vec{r}}{dt^2} = \vec{0} \\
 \end{align*} \\
 
 Integrating both sides of the equation with respect to $t$ twice gives us the equation for $\vec{r}(t)$ which describes the uniquely the path of the light as a function of time:
@@ -206,7 +206,7 @@ The phase change between two beams of light is given by the product of the passe
 	\frac{\Delta \phi}{\omega} &= \Delta t_2 - \Delta t_1
 \end{align*}
 
-With $\Delta t_1$ and $\Delta t_2$, the passed time between the two dotted lines in figure \ref{fig_snell_geom_empty}. 
+With $\Delta t_1$ and $\Delta t_2$, the passed time between the two dotted lines in figure \ref{fig_snell_geom_empty}.
 We can calculate $\Delta t_1$ and $\Delta t_2$ using the speed of the light in the media, $v = c/n$, and the difference in path length in both media, $\Delta L_1$ and $\Delta L_2$ (see figure \ref{fig_snell_geom} for clarification of the used parameters). $\Delta L$ can be calculated using trigonometric identities with the corresponding angles:
 
 \begin{align*}
@@ -233,7 +233,7 @@ Since we don't expect any discontinuity in phase by the refraction, the light be
 \end{figure}
 
  \newpage
- 
+
 \subsubsection{Analytical}
 
 For the analytical derivation of Snell-Descartes law we will use a similar diagram as in the geometrical derivation with a coordinate system added as in figure \ref{fig_snell_analytical}.
@@ -301,59 +301,33 @@ Since the index of refraction of the air varies with the temperature and the tem
 \textit{\underline{Question:} Find the relation between the index of refraction with the altitude if we assume that the gradient of the temperature changes linearily with the altituder.}\\
 \\
 \textit{\underline{Answer:}} \\
-In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$, the Gladstone-Dale relation is used. In equation \ref{eq:glad-dale} this relation is shown with a proportionality constant $K_{air}$. Finally using the equation of state shown as equation \ref{eq:thermo_formula} it is possible to relate the index of refraction $n$ to height $z$. Finding the relation for the pressure at height $P(z)$ is show below in the derivation and the result is displayed in equation \ref{eq:pressure}. In the derivation the following notation is used, $R_{sp,air}$ for the specific gas constant of air and $g_0$ as the gravitational acceleration at $z=0$.\\
+In equation \ref{eq:temp} the temperature at a height $z$ is defined using a ground temperature $T_0$ and a lapse rate $c$ [$K /m$] so that it is linearly decreasing. To relate the index of refraction $n$ to the temperature at height $T(z)$ and pressure $P(z)$, the Edl\'en equation is used this equation is outlined in \cite{birch_downs}. In equation \ref{eq:edlen} this relation is shown. Finding the relation for the pressure at height $P(z)$ is unnecessary as the pressure is assumed constant, the $(n-1)_S$ term is shown in \ref{eq:edlenS} here $\sigma$ is the wavelegth of the light. The result of combining all three equations results in a usable relation between the index of refraction $n$ and the height above the ground $z$. This is shown in equation \ref{eq:bigboii}.\\
 
 \begin{equation}
 	T(z) = T_0 - c \cdot z
 	\label{eq:temp}
 \end{equation}
+
 \begin{equation}
-	n-1 \propto K_{air} \rho
-	\label{eq:glad-dale}
+	(n-1)_{TP} = \frac{P\cdot(n-1)_S}{96095.43}\cdot \frac{1+10^{-8}(0.601-00972\cdot T)\cdot P}{1+0.0036610\cdot T}
+	\label{eq:edlen}
 \end{equation}
+
 \begin{equation}
-	\rho = \frac{1}{R_{sp,air}} \frac{P(z)}{T(z)}
-	\label{eq:thermo_formula}
+	(n-1)_S \cdot 10^{-8} = 8342.54 + \frac{2406147}{130-\sigma^{-2}}+\frac{15998}{38.9-\sigma^{-2}}
+	\label{eq:edlenS}
 \end{equation}
-\begin{equation*}
-	dT/dz \equiv -c
-\end{equation*}
-\begin{equation*}
-	dP = -g_0 \rho dz
-\end{equation*}
-\begin{align*}
-	dP &= g_0 \frac{\rho}{c} dT\\
-	\frac{dP}{P} &= \frac{g_0}{c\cdot R_{sp,air}}\frac{dT}{T}\\
-	\int_{P0}^P \frac{dP}{P} &= \int_{T_0}^T \frac{g_0}{c\cdot R_{sp,air}}\frac{dT}{T}\\
-	\ln{P}-\ln{P_0} &= \big[\ln{T} - \ln{T_0}\big] \cdot \frac{g_0}{c\cdot R_{sp,air}}\\
-	\frac{P}{P_0} &= (\frac{T}{T_0})^{\frac{g_0}{c\cdot R_{sp,air}}}
-\end{align*}
+
 \begin{equation}
-	P = P_0 \cdot (\frac{T}{T_0})^{\frac{g_0}{c\cdot R_{sp,air}}}
-	\label{eq:pressure}
+	(n-1)_{TP} = \frac{P\cdot 10^8 \cdot (8342.54 + \frac{2406147}{130-\sigma^{-2}}+\frac{15998}{38.9-\sigma^{-2}})}{96095.43}\cdot \frac{1+10^{-8}(0.601-00972\cdot (T_0 - c \cdot z))\cdot P}{1+0.0036610\cdot (T_0 - c \cdot z)}
+	\label{eq:bigboii}
 \end{equation}
-After deriving equation \ref{eq:pressure} it is know possible to use both equation \ref{eq:temp} and equation \ref{eq:pressure} to derive the air density $\rho$ with equation \ref{eq:thermo_formula}. The result is show in equation \ref{eq:rho_for_z}, which will be combined with the Gladstone-Dale relation for a equation that equates the index of refraction $n$ with the height $z$. Shown in equation \ref{eq:n_for_z}.\\
-\begin{equation*}
-	\rho = \frac{P_0}{R_{sp,air}\cdot T(z)} \cdot(\frac{T(z)}{T_0})^{\frac{g_0}{c\cdot R_{sp,air}}}
-\end{equation*}
-\begin{align*}
-	\rho &= \frac{P_0}{R_{sp,air}} \cdot \frac{T(z)^{\frac{g_0}{c R_{sp,air}}}}{T(z)} \cdot (T_0)^{-\frac{g_0}{c R_{sp,air}}}\\
-	\rho &= \Bigl[T(z) \Bigr]^{\frac{g_0}{c R_{sp,air}} -1} \frac{P_0}{R_{sp,air}} \cdot T_0^{-\frac{g_0}{c R_{sp,air}}}\\
-	\rho &= \Bigl[T_0 -c\cdot z \Bigr]^{\frac{g_0}{c R_{sp,air}} -1} \frac{P_0}{R_{sp,air}} \cdot T_0^{-\frac{g_0}{c R_{sp,air}}}\\
-	\rho &= \frac{P_0}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
-\end{align*}
-\begin{equation}
-	\rho = \frac{P_0}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
-	\label{eq:rho_for_z}
-\end{equation}
-\begin{equation}
-	n(z) = K_{air}\rho + 1 = 1 + \frac{P_0 K_{air}}{T_0 R_{sp,air}} \Bigl[1-c\cdot z T_0^{-\frac{g_0}{c R_{sp,air}}}\Bigr]
-	\label{eq:n_for_z}
-\end{equation}
+
+
 \textit{\underline{Question:} Express analytically the trajectory of the light in this situation.}\\
 \\
 \textit{\underline{Answer:}} \\
-For an analytical solution it is easier to linearise equation \ref{eq:n_for_z}.
+For an analytical solution it is easier to linearise equation \ref{eq:bigboii}. Where $\alpha$ $[m^{-1}]$ is a linearisation constant.
 \begin{align*}
 	n_l(z) &= n_0 + \alpha \cdot z\\
 	n_l(z) &= n(0) +z \cdot \frac{d}{dz}n(z)\rvert_{z=0}
@@ -375,17 +349,17 @@ To get to an analytical solution; equation \ref{eq_1.6} needs to be solved. This
 	n(z)^2 \cdot dx^2 &= c^2(dx^2 + dz^2)\\
 	\frac{dz}{dx} = \frac{\sqrt{n(z)^2 -c^2}}{c} &= \frac{\sqrt{(n_0+\alpha\cdot z)^2 -c^2}}{c}
 \end{align*}
-The above first-order nonlinear ordinary differential equation has been solved using wolfram and is displayed below in \ref{eq:magic_wolfram}. In this equation $k$ is an arbritary constant and $c$ is the total path length in meters. $\alpha$ [$m^{-1}$] is the defined linearisation constant.
+The above first-order nonlinear ordinary differential equation has been solved using wolfram and is displayed below in \ref{eq:magic_wolfram}. In this equation $k$ is an arbitrary constant and $c$ is the total path length in meters. $\alpha$ [$m^{-1}$] is the defined linearisation constant.
 
 \begin{equation}
-	z(x)=-\frac{c^2 \exp{(\alpha x + \alpha k)/c}+\exp{-(\alpha x + \alpha k)/c}-2n_0}{2 \alpha}
+	z(x)=-\frac{c^2 e^{(\alpha x + \alpha k)/c}+e^{-(\alpha x + \alpha k)/c}-2n_0}{2 \alpha}
 	\label{eq:magic_wolfram}
 \end{equation}
 
 \textit{\underline{Question:} Plot several of these trajectories for different relevant cases.}\\
 \\
 \textit{\underline{Answer:}} \\
-Below in figure \ref{fig:paths} a few trajectories for different $\alpha$-values are plotted. These values range from $\alpha = 7.77 \cdot 10^{-5}$ to the same constant a magnitude larger. The linearisation $\alpha$ is constant equal to $d/dz \cdot n(z)$ evaluated at $z=25 [m]$. Our initial guess for $\alpha$ was $\alpha = 7.77 \cdot 10^{-7}$, but this resulted in a distance to the mirage of about half a kilometre. We felt that this does not represent an actual mirage effect and thus decided plot these alfa values. To get these values we had to rethink our lapse rate to be $c = 7$ $[Km^{-1}]$.\\
+Below in figure \ref{fig:paths} a few trajectories for different $\alpha$-values are plotted. These values range from $\alpha = 1.41 \cdot 10^{-5}$ $[m^{-1}]$ to the same constant five times larger. The linearisation $\alpha$ is constant equal to $d/dz \cdot n(z)$ evaluated as the slope of the line between $n_0$ the index of refraction at $z=0$ $[m]$ and $n_1$ for $z=3$ $[m]$. Our initial guess for $\alpha$ was $\alpha = 1.41 \cdot 10^{-5}$, but this resulted in a distance to the mirage of about 50 $[m]$. We felt that this might an actual mirage effect and thus decided plot these alfa values. To get these values we had a ground temperature of $T_0 = 344$ $K$ and a temperature of $T_1 = 293$ $K$, we chose these values since the might represent a hot day somewhere near the equator. This is still not an actual representation for a mirage since the temperature and the index of refraction doe not change linearily with the height above the ground.\\
 
 \begin{figure}[h!]
 	\centering
@@ -395,7 +369,7 @@ Below in figure \ref{fig:paths} a few trajectories for different $\alpha$-values
 \textit{\underline{Question:} Find the closest distance from an observer where a mirage can be visible.}\\
 \\
 \textit{\underline{Answer:}} \\
-In the figure above an $\alpha$-value was used, this value was equal to the derivate of our index of refraction function $n(z)$ evealuated at $x=0$. This value was dependant on the ground temperature $T_0$, the ground pressure $P_0$ and the lapse rate of the temperature $c$. For these the following values were used: $T_0$ $=$ $323.15$ $K$, $P_0$ $=$ $101325$ $Pa$, a lapse rate of $c$ $=$ $7$ $K/m$ and an initial angle of looking down $\theta$ $=$ $15$ degrees. With these conditions you would see the mirage about 100 to 200 $m$ in front of you. This is about the distance we would expect based on experience.\\
+From the plot above we can see that the closest a mirage can occur is 50 meters from the observer. This scenario is still not an actual representation for a mirage since the temperature and the index of refraction doe not change linearily with the height above the ground.
 
 \textit{\underline{Question:} Forsee what could happen on the north pole when a warm wind is present.}\\
 \\
@@ -548,23 +522,23 @@ Inverting the substitution and doing some rewriting yields the following equatio
 \end{equation*}
 
 \begin{equation*}
-	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \; \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a} \right) 
+	r(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \; \alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a} \right)
 \end{equation*}
 
 Since there are no discontinuities in $n(r)$ and $dn(r)/dr$, we would expect that there are also no discontinuities in $r(x)$ and $dr(x)/dx$. Since $r = \mid y \mid$ for the light beam in the $\vartheta _{x,y}$ plane. The only possible solution of $y(x)$ is the following:
 
 \begin{equation}
-	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \;\alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a}\right) 
+	y(x) = \frac{\sqrt{n_0^2-a^2}}{n_0 \;\alpha} \sin \left( \frac{n_0 \; \alpha \; x}{a}\right)
 	\label{eq_fibre_path}
 \end{equation}
 
 If we now consider that that the angle of the light beam at $x=0$ , $\theta _i$, is determined. We must consider the derivative of the latter equation:
 
 \begin{equation*}
-	\frac{d \; y(x)}{dx} =  \frac{n_0 \; \alpha}{a} \frac{\sqrt{n_0^2-a^2} }{n_0 \alpha} \cos \left( \frac{n_0 \; \alpha \; x}{a}\right) 
+	\frac{d \; y(x)}{dx} =  \frac{n_0 \; \alpha}{a} \frac{\sqrt{n_0^2-a^2} }{n_0 \alpha} \cos \left( \frac{n_0 \; \alpha \; x}{a}\right)
 \end{equation*}
 
-For $x=0$: 
+For $x=0$:
 
 \begin{equation*}
 	\frac{d \; y(x)}{dx} =  \sqrt{n_0^2-a^2}
@@ -587,7 +561,8 @@ If we now consider $n_0$ to be constant for the given fibre and $a$ dependent on
 \textit{\underline{Answer:}} \\
 To plot a numerical solution we use equation \ref{eq:drdx} and rewrite it to get a fraction $dr/dx$. We will then plot this function using the python script below. There is one problem however, since we used equation  \ref{eq:drdx} we can only get the part of the solution where $(dr/dx)^2$ was positive.\\
 
-\lstinputlisting[language=Python]{../../python/plot_fiber.py}
+\lstinputlisting[language=Python]{../../python/numeric_fibre_path_reformat.py}
+
 Figure \ref{fig:numersolut} shows a plot of the numerical solution using the python code above. The horizontal and vertical axis are normalised to $R$, the radius of the fibre.\\
 
 \begin{figure}[h!]
